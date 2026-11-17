@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       channels:
-        description: "名前:channel_hash:live_hash をカンマ区切り"
+        description: 'JSON配列 ["名前:channel_hash:live_hash", ...]'
         required: true
       minutes:
         description: "最長の取り込み時間（分）"
@@ -21,7 +21,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ch: ${{ fromJSON(format('["{0}"]', join(fromJSON(format('["{0}"]', inputs.channels)), '","'))) }}
+        ch: ${{ fromJSON(inputs.channels) }}
     env:
       TZ: Asia/Tokyo
     steps:
