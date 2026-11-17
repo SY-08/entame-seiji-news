@@ -220,9 +220,9 @@ def short_overlay(scene, half):
     p.append(f'<div class="abs" style="left:0;top:0;width:1080px;height:240px;background:{NAVY}"></div>')
     p.append(f'<div class="abs" style="left:0;top:848px;width:1080px;height:1072px;background:{NAVY}"></div>')
     p.append(f'<div class="abs" style="left:0;top:0;width:1080px;height:70px;background:{ORANGE};color:#fff;font-weight:900;font-size:34px;text-align:center;line-height:70px">エンタメ政治ニュース ｜ デイリー国会</div>')
-    p.append(f'<div class="abs" style="left:30px;top:90px;width:1020px;height:70px;background:{RED};color:#fff;font-weight:900;font-size:40px;text-align:center;line-height:70px">{esc(meta["card_short"])}</div>')
+    p.append(f'<div class="abs" style="left:30px;top:90px;width:1020px;height:70px;background:{RED};color:#fff;font-weight:900;font-size:40px;text-align:center;line-height:70px">{esc(scene.get("card_short", meta["card_short"]))}</div>')
     p.append(f'<div class="abs" style="left:30px;top:172px;width:150px;height:52px;background:{ORANGE};color:#fff;font-weight:900;font-size:30px;text-align:center;line-height:52px">{esc(half)}戦</div>')
-    p.append(f'<div class="abs" style="left:200px;top:172px;width:850px;color:{YELLOW};font-weight:900;font-size:34px;line-height:52px">{esc(meta["theme_short"])}</div>')
+    p.append(f'<div class="abs" style="left:200px;top:172px;width:850px;color:{YELLOW};font-weight:900;font-size:34px;line-height:52px">{esc(scene.get("theme_short", meta["theme_short"]))}</div>')
     # 映像枠（240〜848）は透明
     if scene.get("caption"):
         p.append(f'<div class="abs" style="left:30px;top:880px;width:1020px;background:#000;color:#fff;font-weight:700;font-size:40px;padding:16px 24px;border-radius:6px;text-align:center;line-height:1.45">{esc(scene["caption"])}</div>')
@@ -372,8 +372,9 @@ def build():
             else:  # clip
                 ov = shoot(pg, main_overlay(sc), 1280, 720, sid)
                 seg = seg_clip(sc, ov, 1280, 720, sid, (0, 0, 1280, 720))
-            main_parts.append(seg)
-            t_main += dur(seg)
+            if sc.get("main", True):
+                main_parts.append(seg)
+                t_main += dur(seg)
             for h in halves:
                 if typ == "clip" or typ == "profile":
                     ov = shoot(pg, short_overlay(sc, h), 1080, 1920, f"{sid}_s{h}")
