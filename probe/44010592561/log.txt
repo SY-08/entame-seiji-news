@@ -1,0 +1,21 @@
+18805 vod.html
+vtag_src_base_vod" value="http://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1117-1210-01/playlist.m3u8"
+ 衆議院インターネット審議中継 衆議院ホームページ 参議院審議中継 国会会議録検索ページ HOME お知らせ 利用方法 FAQ ご意見・ご感想 文字の大きさ： 開会日 ： 2026年11月17日 (火) 会議名 ： 政治改革特別委員会 (10分) はじめから再生 --> 案件： 衆議院議員の選挙制度改革及び定数削減に関する法律案（221国会衆28） 現行の衆議院選挙制度の見直しのための公職選挙法の一部を改正する等の法律案（222国会衆3） 参考人出頭要求に関する件 発言者一覧 説明・質疑者等（発言順）： 開始時刻 所要時間 井上英孝(政治改革特別委員長) 12時 10分 01分 加藤勝信(自由民主党・無所属の会) 12時 11分 06分 戻る ・視聴画面右下の「歯車アイコン」から[速度]をクリックすると、再生速度を変更することができます。 ・発言者一覧について、説明・質疑者等の氏名がリンク表示されると、発言者頭出し機能が有効となり、クリックするとその発言者からの映像が再生されます。 .theo-primary-color, .vjs-selected {color: #00adfc !important;} .theo-primary-background {color: #000000 !important;background-color: #00adfc !important;} /*.theo-settings-control-button {display: none !important;}*/ /*設定アイコン*/ /*li[aria-label="Open the video speed settings menu"] {display: none !important;}*/ /*速度*/ li[aria-label="Open the video quality settings menu"] {display: none !important;} /*画質*/ .theo-context-menu {display: none !important;} .video-js:not(.vjs-fullscreen) .theo-secondary-color.vjs-control-bar {opacity: 1!important;} .theo-secondary-color.vjs-control-bar {bottom: -3.3em!important;} .video-js:not(.vjs-fullscreen) .theo-settings-control-menu {bottom: 0.8em!important;} /* 設定メニュー位置調整（全画面表示は対象外）*/ .vjs-fullscreen .theo-secondary-color.vjs-control-bar {bottom: 0em!important;} .vjs-control-bar .theo-tertiary-color.theo-control-bar-shadow {background:black !important; height: 100%; background-color: #000000 !important;} .theo-tertiary-color.theo-control-bar-shadow {height: 42px !important;} .fa-arrow-rotate-left { order: -101; /* to the left of the play/pause-button */ cursor: pointer; margin-right: 0.8em; } .fa-arrow-rotate-
+URL=http://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1117-1210-01/playlist.m3u8
+[in#0 @ 0x587ac2972c80] Error opening input: Invalid data found when processing input
+Error opening input file http://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1117-1210-01/playlist.m3u8.
+Error opening input files: Invalid data found when processing input
+full.ts: No such file or directory
+[in#0 @ 0x5ecb667c0d00] Error opening input: No such file or directory
+Error opening input file full.ts.
+Error opening input files: No such file or directory
+ls: cannot access 'vod_56525.mp4': No such file or directory
+[in#0 @ 0x61e53676fc80] Error opening input: No such file or directory
+Error opening input file vod_56525.mp4.
+Error opening input files: No such file or directory
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+  File "/usr/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['ffmpeg', '-v', 'error', '-y', '-i', 'vod_56525.mp4', '-ac', '1', '-ar', '16000', 'a.wav']' returned non-zero exit status 254.
