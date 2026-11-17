@@ -1,0 +1,47 @@
+name: 発言を切り出す
+
+on:
+  workflow_dispatch:
+    inputs:
+      cuts:
+        description: "切り出し指示のパス（例：videos/2026-11-17/cuts.json）"
+        required: true
+      artifact_runs:
+        description: "録画を取り出す元の実行（名前=run_id をカンマ区切り。例：houmu=44011493094）"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  cut:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: 道具
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q faster-whisper requests numpy
+      - name: 録画を取り出す
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          IFS=, read -ra PAIRS <<< "${{ inputs.artifact_runs }}"
+          for p in "${PAIRS[@]}"; do
+            [ -z "$p" ] && continue
+            N=${p%%=*}; R=${p#*=}
+            gh run download "$R" -R "${{ github.repository }}" -n "sangiin-$N" -D "rec_$N"
+            ls "rec_$N" | head
+          done
+      - name: 切り出しと文字起こし
+        run: python tools/cut.py "${{ inputs.cuts }}" "$(dirname "${{ inputs.cuts }}")/clips"
+      - name: 保存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$(dirname "${{ inputs.cuts }}")/clips"
+          git commit -qm "発言の切り出し $(date +%H:%M)" || true
+          git pull --rebase -q && git push -q
