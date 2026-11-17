@@ -1,0 +1,51 @@
+name: 取り込んだ録画を文字起こし（分割して同時に）
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "録画を取り込んだ実行のID"
+        required: true
+      name:
+        description: "名前（houmu など）"
+        required: true
+      start:
+        description: "seg_000 の開始時刻（例 09:30:01）"
+        required: true
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  tr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        part: [0, 1, 2, 3, 4, 5]
+    env:
+      TZ: Asia/Tokyo
+      START_CLOCK: ${{ inputs.start }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: 道具
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q faster-whisper numpy
+      - name: 録画を取り出す
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download "${{ inputs.run_id }}" -R "${{ github.repository }}" -n "sangiin-${{ inputs.name }}" -D all
+      - name: 文字起こし
+        run: |
+          mkdir -p mine
+          for f in all/seg_*.ts; do n=$(basename $f .ts); n=${n#seg_}; if [ $((10#$n % 6)) -eq ${{ matrix.part }} ]; then mv "$f" mine/; fi; done
+          ls mine
+          OUT="live/$(date +%F)/sangiin/${{ inputs.name }}/transcripts"
+          python tools/transcribe.py mine "$OUT" final
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$OUT" && git commit -qm "文字起こし ${{ inputs.name }} part ${{ matrix.part }}" || true
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep $((RANDOM % 7 + 2)); done
