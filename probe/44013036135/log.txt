@@ -1,0 +1,4 @@
+houmu subtitle segments: 2724
+houmu cues: 871
+naikaku subtitle segments: 3298
+naikaku cues: 804
