@@ -36,7 +36,10 @@ for s in todo:
         base = datetime(2000, 1, 1, h0, m0, s0) + timedelta(seconds=600 * int(num))
     else:
         base = datetime(2000, 1, 1, int(num[0:2]), int(num[2:4]), int(num[4:6]))
-    segments, _ = model.transcribe(str(wav), language="ja", beam_size=1, vad_filter=True)
+    import numpy as np
+    pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(wav), "-f", "f32le", "-ac", "1", "-ar", "16000", "-"], capture_output=True, check=True).stdout
+    audio = np.frombuffer(pcm, dtype=np.float32)
+    segments, _ = model.transcribe(audio, language="ja", beam_size=1, vad_filter=True)
     rows = []
     for g in segments:
         t0 = base + timedelta(seconds=g.start)
