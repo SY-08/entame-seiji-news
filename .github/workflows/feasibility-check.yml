@@ -1,0 +1,94 @@
+name: 実現可能性チェック（映像・会議録・文字起こし）
+
+# 手動で1回動かし、当日の材料がGitHub Actionsから取れるかを確かめる。
+# 結果は Issue にまとめる。
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "確かめる会議日（YYYY-MM-DD）"
+        required: true
+        default: "2026-11-16"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: 道具を入れる
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg jq >/dev/null
+          pip install -q yt-dlp faster-whisper
+
+      - name: 1. サイトにつながるか
+        run: |
+          {
+            echo "## 1. サイトにつながるか"
+            echo "| サイト | HTTP | 大きさ |"
+            echo "| --- | --- | --- |"
+            for u in \
+              https://www.webtv.sangiin.go.jp/webtv/index.php \
+              https://www.shugiintv.go.jp/jp/index.php \
+              https://www.sangiin.go.jp/japanese/joho1/kousei/koho/222/nittei.htm \
+              "https://kokkai.ndl.go.jp/api/meeting_list?maximumRecords=1&recordPacking=json"; do
+              r=$(curl -sS -m 30 -o /tmp/page -w "%{http_code} %{size_download}" "$u" || echo "失敗 0")
+              echo "| $u | ${r% *} | ${r#* } |"
+            done
+          } >> report.md
+
+      - name: 2. 会議録はいつまで出ているか
+        run: |
+          D="${{ inputs.date }}"
+          {
+            echo "## 2. 会議録の掲載状況"
+            for h in 参議院 衆議院; do
+              latest=$(curl -sS -m 30 "https://kokkai.ndl.go.jp/api/meeting_list?nameOfHouse=$h&from=2026-10-01&maximumRecords=1&recordPacking=json" | jq -r '.meetingRecord[0].date // "取得失敗"')
+              echo "- $h：最新の会議録は $latest（確かめた会議日 $D）"
+            done
+          } >> report.md
+
+      - name: 3. 審議中継のページから映像の場所が分かるか
+        run: |
+          {
+            echo "## 3. 審議中継のページ"
+            for u in https://www.webtv.sangiin.go.jp/webtv/index.php https://www.shugiintv.go.jp/jp/index.php; do
+              curl -sS -m 30 "$u" -o page.html || true
+              echo "### $u"
+              echo '```'
+              grep -oE '(https?:)?//[^"'"'"' ]+\.(m3u8|mp4)[^"'"'"' ]*' page.html | sort -u | head -10 || true
+              grep -oE '[a-zA-Z0-9_/.-]+\.(php|json)\?[^"'"'"' ]+' page.html | sort -u | head -20 || true
+              echo '```'
+            done
+          } >> report.md
+
+      - name: 4. 動画の取得を試す（yt-dlp）
+        run: |
+          {
+            echo "## 4. yt-dlp で取れるか"
+            echo '```'
+            for u in https://www.webtv.sangiin.go.jp/webtv/index.php https://www.shugiintv.go.jp/jp/index.php; do
+              timeout 120 yt-dlp --simulate --print "%(title)s %(duration)s %(url)s" "$u" 2>&1 | tail -5 || true
+            done
+            echo '```'
+          } >> report.md
+
+      - name: 5. 文字起こしの速さ（試験音声2分）
+        run: |
+          ffmpeg -v error -f lavfi -i "sine=frequency=440:duration=120" -ar 16000 test.wav
+          start=$(date +%s)
+          python -c "from faster_whisper import WhisperModel; m=WhisperModel('small', compute_type='int8'); s,_=m.transcribe('test.wav', language='ja'); list(s)"
+          end=$(date +%s)
+          echo "## 5. 文字起こし" >> report.md
+          echo "- small モデルで2分の音声：$((end-start))秒（モデルの読み込みを含む）" >> report.md
+
+      - name: 結果を Issue にする
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh issue create --title "実現可能性チェックの結果（${{ inputs.date }}）" --body-file report.md
