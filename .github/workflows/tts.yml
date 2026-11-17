@@ -1,0 +1,33 @@
+name: ナレーション音声を作る（VOICEVOX）
+
+on:
+  workflow_dispatch:
+    inputs:
+      request:
+        description: "依頼JSONのパス（例：videos/2026-11-17/tts.json）"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: VOICEVOX を起動
+        run: docker run -d --rm -p 50021:50021 voicevox/voicevox_engine:cpu-latest
+      - name: 音声を作る
+        run: |
+          pip install -q requests
+          REQ="${{ inputs.request }}"
+          python tools/tts.py "$REQ" "$(dirname "$REQ")/tts"
+      - name: 保存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase -q
+          git add "$(dirname "${{ inputs.request }}")/tts"
+          git commit -qm "ナレーション音声 $(date +%H:%M)" || true
+          git push -q || (git pull --rebase -q && git push -q)
