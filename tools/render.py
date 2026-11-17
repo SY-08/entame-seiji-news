@@ -173,7 +173,7 @@ def main_profile(scene):
     return f"""
 <div class="abs" style="left:640px;top:0;width:640px;height:684px;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.93) 22%)"></div>
 <div class="abs" style="left:760px;top:170px;width:120px;height:44px;background:{p.get('color',ORANGE)};color:#fff;font-weight:900;font-size:26px;text-align:center;line-height:44px">{esc(p['party'])}</div>
-<div class="abs" style="left:760px;top:226px;color:{NAVY};font-weight:900;font-size:120px;line-height:1.1;-webkit-text-stroke:2px {NAVY}">{esc(p['name'])}</div>
+<div class="abs" style="left:740px;top:236px;color:{NAVY};font-weight:900;font-size:{120 if len(p['name']) <= 4 else 92}px;line-height:1.1;white-space:nowrap;-webkit-text-stroke:2px {NAVY}">{esc(p['name'])}</div>
 <div class="abs" style="left:760px;top:396px;width:440px;border-top:3px solid {NAVY};padding-top:12px;color:{NAVY};font-weight:700;font-size:26px">{esc(p['role'])}</div>
 {news_label(1280, 720)}
 """
@@ -191,10 +191,10 @@ def main_overlay(scene):
     parts.append(mini_char(150, 520, 140))
     if scene.get("caption"):
         cap = scene["caption"]
-        parts.append(f'<div class="abs" style="left:430px;top:574px;width:820px;min-height:60px;background:rgba(0,0,0,.72);color:#fff;font-weight:700;font-size:26px;padding:10px 18px;border-radius:4px;line-height:1.4">{esc(cap)}</div>')
+        parts.append(f'<div class="abs" style="left:430px;top:548px;width:820px;min-height:60px;background:rgba(0,0,0,.72);color:#fff;font-weight:700;font-size:26px;padding:10px 18px;border-radius:4px;line-height:1.4">{esc(cap)}</div>')
     if scene.get("explain"):
-        parts.append(f'<div class="abs" style="left:430px;top:540px;width:820px;background:#fff;border-left:10px solid {BLUE};color:{NAVY};font-weight:900;font-size:28px;padding:12px 18px;line-height:1.4"><div style="color:{BLUE};font-size:18px">横塚の解説</div>{esc(scene["explain"])}</div>')
-    parts.append(f'<div class="abs" style="right:14px;top:652px;color:#fff;font-size:15px;text-shadow:0 1px 3px #000">{esc(meta["citation"])}</div>')
+        parts.append(f'<div class="abs" style="left:430px;top:528px;width:820px;background:#fff;border-left:10px solid {BLUE};color:{NAVY};font-weight:900;font-size:28px;padding:12px 18px;line-height:1.4"><div style="color:{BLUE};font-size:18px">横塚の解説</div>{esc(scene["explain"])}</div>')
+    parts.append(f'<div class="abs" style="right:14px;top:662px;color:#fff;font-size:14px;text-shadow:0 1px 3px #000,0 0 2px #000">{esc(meta["citation"])}</div>')
     return "".join(parts)
 
 
