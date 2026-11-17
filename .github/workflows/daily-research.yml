@@ -1,9 +1,10 @@
 name: 夕方の自動リサーチ
 
 on:
-  schedule:
-    # 日本時間 16:37（UTC 7:37）、月〜金。19時までに作業を終え、確認・修正をはさんで20時公開
-    - cron: "37 7 * * 1-5"
+  # 定時実行は CLAUDE_CODE_OAUTH_TOKEN を登録してから有効にする
+  # schedule:
+  #   # 日本時間 16:37（UTC 7:37）、月〜金。19時までに作業を終え、確認・修正をはさんで20時公開
+  #   - cron: "37 7 * * 1-5"
   workflow_dispatch:
     inputs:
       date:

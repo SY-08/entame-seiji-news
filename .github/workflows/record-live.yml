@@ -1,0 +1,89 @@
+name: 国会ライブの自動収録と文字起こし
+
+on:
+  workflow_dispatch:
+    inputs:
+      house:
+        description: "院（shugiin＝衆議院 / sangiin＝参議院）"
+        required: true
+        default: "shugiin"
+      keyword:
+        description: "会議名の一部（例：政治改革）"
+        required: false
+        default: "政治改革"
+      minutes:
+        description: "最長の収録時間（分）"
+        required: true
+        default: "270"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: record-${{ inputs.house }}
+  cancel-in-progress: false
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      TZ: Asia/Tokyo
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 道具を入れる
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q yt-dlp faster-whisper requests
+
+      - name: 日付とフォルダ
+        id: d
+        run: |
+          D=$(date +%F)
+          echo "date=$D" >> "$GITHUB_OUTPUT"
+          echo "dir=live/$D/${{ inputs.house }}" >> "$GITHUB_OUTPUT"
+          mkdir -p "live/$D/${{ inputs.house }}"
+
+      - name: 中継の場所を探す
+        id: find
+        continue-on-error: true
+        run: python tools/find_stream.py "${{ inputs.house }}" "${{ steps.d.outputs.dir }}/debug" "${{ inputs.keyword }}"
+
+      - name: 調査結果を保存（見つからなくても）
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add live
+          git commit -qm "中継の調査 ${{ steps.d.outputs.date }}" || true
+          git push || (git pull --rebase -q && git push)
+
+      - name: 収録しながら文字起こし
+        if: steps.find.outcome == 'success'
+        run: |
+          DIR="${{ steps.d.outputs.dir }}"
+          URL=$(cat "$DIR/debug/stream_url.txt")
+          mkdir -p rec "$DIR/transcripts"
+          END=$(( $(date +%s) + ${{ inputs.minutes }} * 60 ))
+          ffmpeg -v warning -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 30 \
+            -user_agent "Mozilla/5.0" -i "$URL" -c copy -f segment -segment_time 600 \
+            -reset_timestamps 1 -strftime 1 "rec/seg_%H%M%S.ts" &
+          FF=$!
+          while kill -0 $FF 2>/dev/null && [ "$(date +%s)" -lt "$END" ]; do
+            sleep 120
+            python tools/transcribe.py rec "$DIR/transcripts" || true
+            git add "$DIR/transcripts" && git commit -qm "文字起こし $(date +%H:%M)" && (git push -q || (git pull --rebase -q && git push -q)) || true
+          done
+          kill $FF 2>/dev/null || true
+          sleep 5
+          python tools/transcribe.py rec "$DIR/transcripts" final || true
+          git add "$DIR/transcripts" && git commit -qm "文字起こし（最後）" && (git push -q || (git pull --rebase -q && git push -q)) || true
+          ls -la rec
+
+      - name: 録画を保存（Actionsの成果物、14日間）
+        if: always() && steps.find.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: rec-${{ steps.d.outputs.date }}-${{ inputs.house }}
+          path: rec/*.ts
+          retention-days: 14
