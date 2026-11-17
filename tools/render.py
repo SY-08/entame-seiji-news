@@ -153,7 +153,7 @@ def main_call(scene):
 
 
 def main_matchup(scene):
-    L, R = meta["left"], meta["right"]
+    L, R = scene.get("left", meta["left"]), scene.get("right", meta["right"])
     return f"""
 <div class="abs" style="left:0;top:14px;width:1280px;text-align:center;color:#fff;font-weight:900;font-size:30px;text-shadow:0 2px 6px #000">{esc(meta['league'])}</div>
 <div class="abs" style="left:40px;top:62px;width:520px;height:96px;background:rgba(10,18,36,.85);border-radius:48px"></div>
@@ -193,7 +193,7 @@ def main_overlay(scene):
         cap = scene["caption"]
         parts.append(f'<div class="abs" style="left:430px;top:548px;width:820px;min-height:60px;background:rgba(0,0,0,.72);color:#fff;font-weight:700;font-size:26px;padding:10px 18px;border-radius:4px;line-height:1.4">{esc(cap)}</div>')
     if scene.get("explain"):
-        parts.append(f'<div class="abs" style="left:430px;top:528px;width:820px;background:#fff;border-left:10px solid {BLUE};color:{NAVY};font-weight:900;font-size:28px;padding:12px 18px;line-height:1.4"><div style="color:{BLUE};font-size:18px">横塚の解説</div>{esc(scene["explain"])}</div>')
+        parts.append(f'<div class="abs" style="left:430px;top:528px;width:820px;background:#fff;border-left:10px solid {BLUE};color:{NAVY};font-weight:900;font-size:28px;padding:12px 18px;line-height:1.4"><div style="color:{BLUE if scene.get("speaker", "横塚") == "横塚" else PINK};font-size:18px">{esc(scene.get("speaker", "横塚"))}{"の実況" if scene.get("speaker", "横塚") == "横塚" else ""}</div>{esc(scene["explain"])}</div>')
     parts.append(f'<div class="abs" style="right:14px;top:662px;color:#fff;font-size:14px;text-shadow:0 1px 3px #000,0 0 2px #000">{esc(meta["citation"])}</div>')
     return "".join(parts)
 
@@ -229,7 +229,7 @@ def short_overlay(scene, half):
     if scene.get("panel"):
         p.append(f'<div class="abs panel" style="left:30px;top:{1060 if scene.get("caption") else 900}px;width:720px">{panel_html(scene["panel"], 1.6)}</div>')
     if scene.get("explain"):
-        p.append(f'<div class="abs" style="left:30px;top:900px;width:1020px;background:#fff;border-left:14px solid {BLUE};color:{NAVY};font-weight:900;font-size:44px;padding:20px 26px;line-height:1.45"><div style="color:{BLUE};font-size:28px">横塚の解説</div>{esc(scene["explain"])}</div>')
+        p.append(f'<div class="abs" style="left:30px;top:900px;width:1020px;background:#fff;border-left:14px solid {BLUE};color:{NAVY};font-weight:900;font-size:44px;padding:20px 26px;line-height:1.45"><div style="color:{BLUE};font-size:28px">{esc(scene.get("speaker", "横塚"))}</div>{esc(scene["explain"])}</div>')
     p.append(logo(790, 1420, 1.5))
     p.append(mini_char(800, 1530, 230))
     p.append(f'<div class="abs" style="left:0;top:1868px;width:1080px;height:52px;background:{NAVY};border-top:3px solid {ORANGE}"></div><div class="abs" style="left:0;top:1868px;width:150px;height:52px;background:{RED};color:#fff;font-weight:900;font-size:30px;line-height:52px;text-align:center">NEWS</div>')
