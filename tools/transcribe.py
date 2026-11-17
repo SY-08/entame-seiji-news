@@ -29,8 +29,13 @@ model = WhisperModel("small", device="cpu", compute_type="int8", cpu_threads=3)
 for s in todo:
     wav = s.with_suffix(".wav")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(s), "-ac", "1", "-ar", "16000", str(wav)], check=True)
-    hh, mm, ss = s.stem[4:6], s.stem[6:8], s.stem[8:10]
-    base = datetime(2000, 1, 1, int(hh), int(mm), int(ss))
+    import os
+    num = s.stem[4:]
+    if len(num) == 3 and os.environ.get("START_CLOCK"):
+        h0, m0, s0 = map(int, os.environ["START_CLOCK"].split(":"))
+        base = datetime(2000, 1, 1, h0, m0, s0) + timedelta(seconds=600 * int(num))
+    else:
+        base = datetime(2000, 1, 1, int(num[0:2]), int(num[2:4]), int(num[4:6]))
     segments, _ = model.transcribe(str(wav), language="ja", beam_size=1, vad_filter=True)
     rows = []
     for g in segments:

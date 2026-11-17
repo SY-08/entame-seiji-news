@@ -1,0 +1,66 @@
+name: 参議院の委員会を取り込む（巻き戻し録画＋ライブ）
+
+on:
+  workflow_dispatch:
+    inputs:
+      channels:
+        description: "名前:channel_hash:live_hash をカンマ区切り"
+        required: true
+      minutes:
+        description: "最長の取り込み時間（分）"
+        required: true
+        default: "300"
+
+permissions:
+  contents: write
+
+jobs:
+  rec:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      matrix:
+        ch: ${{ fromJSON(format('["{0}"]', join(fromJSON(format('["{0}"]', inputs.channels)), '","'))) }}
+    env:
+      TZ: Asia/Tokyo
+    steps:
+      - uses: actions/checkout@v4
+      - name: 道具
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg jq >/dev/null
+          pip install -q faster-whisper requests
+      - name: 取り込みながら文字起こし
+        run: |
+          IFS=: read NAME CH LH <<< "${{ matrix.ch }}"
+          D=$(date +%F); DIR="live/$D/sangiin/$NAME"; mkdir -p "$DIR/transcripts" rec
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36"
+          BASE="https://sangiin-live.live.ipcasting.jp/live/$CH.h/$LH"
+          curl -sS -A "$UA" -e https://www.webtv.sangiin.go.jp/ "$BASE/channel-info.json" -o "$DIR/channel-info.json"
+          START=$(jq -r '.schedules[0].status.program_start' "$DIR/channel-info.json" | cut -c12-19)
+          export START_CLOCK="$START"
+          echo "start=$START"
+          curl -sS -A "$UA" -e https://www.webtv.sangiin.go.jp/ "$BASE/index.m3u8" | tee "$DIR/index.m3u8" | head -20
+          END=$(( $(date +%s) + ${{ inputs.minutes }} * 60 ))
+          ffmpeg -v warning -user_agent "$UA" -headers "Referer: https://www.webtv.sangiin.go.jp/" \
+            -live_start_index 0 -i "$BASE/index.m3u8" -map 0:v:0 -map 0:a:0 -c copy \
+            -f segment -segment_time 600 -reset_timestamps 1 "rec/seg_%03d.ts" &
+          FF=$!
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          while kill -0 $FF 2>/dev/null && [ "$(date +%s)" -lt "$END" ]; do
+            sleep 90
+            python tools/transcribe.py rec "$DIR/transcripts" || true
+            git add "$DIR" && git commit -qm "参院 $NAME 文字起こし $(date +%H:%M)" && (git pull --rebase -q && git push -q) || true
+          done
+          kill $FF 2>/dev/null || true; sleep 5
+          python tools/transcribe.py rec "$DIR/transcripts" final || true
+          git add "$DIR" && git commit -qm "参院 $NAME 文字起こし（最後）" && (git pull --rebase -q && git push -q) || true
+          ls -la rec
+          echo "NAME=$NAME" >> "$GITHUB_ENV"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sangiin-${{ env.NAME }}
+          path: rec/*.ts
+          retention-days: 14
