@@ -29,6 +29,13 @@ meta = spec["meta"]
 TTS = spec_path.parent / "tts"
 
 
+import base64
+
+
+def data_uri(path):
+    return "data:image/png;base64," + base64.b64encode(Path(path).read_bytes()).decode()
+
+
 def esc(s):
     return html.escape(str(s)).replace("\n", "<br>")
 
@@ -98,7 +105,7 @@ def panel_html(p, scale=1.0):
 
 
 def mini_char(left, top, size):
-    face = (ASSETS / "yoko_face.png").as_uri()
+    face = data_uri(ASSETS / "yoko_face.png")
     return f'<div class="abs" style="left:{left}px;top:{top}px;width:{size}px;height:{size}px;border-radius:50%;overflow:hidden;border:4px solid {ORANGE};background:#fff"><img src="{face}" style="width:100%;height:100%;object-fit:cover"></div>'
 
 
@@ -108,7 +115,7 @@ def logo(left, top, s=1.0):
 
 
 def main_studio(scene):
-    studio = (ASSETS / "studio.png").as_uri()
+    studio = data_uri(ASSETS / "studio.png")
     spk = scene.get("speaker", "横塚")
     col = BLUE if spk == "横塚" else PINK
     th = meta
@@ -210,22 +217,23 @@ def main_end(scene):
 # ---- ショート（1080x1920）
 def short_overlay(scene, half):
     p = []
-    p.append(f'<div class="abs" style="left:0;top:0;width:1080px;height:1920px;background:{NAVY}"></div>')
+    p.append(f'<div class="abs" style="left:0;top:0;width:1080px;height:240px;background:{NAVY}"></div>')
+    p.append(f'<div class="abs" style="left:0;top:848px;width:1080px;height:1072px;background:{NAVY}"></div>')
     p.append(f'<div class="abs" style="left:0;top:0;width:1080px;height:70px;background:{ORANGE};color:#fff;font-weight:900;font-size:34px;text-align:center;line-height:70px">エンタメ政治ニュース ｜ デイリー国会</div>')
     p.append(f'<div class="abs" style="left:30px;top:90px;width:1020px;height:70px;background:{RED};color:#fff;font-weight:900;font-size:40px;text-align:center;line-height:70px">{esc(meta["card_short"])}</div>')
     p.append(f'<div class="abs" style="left:30px;top:172px;width:150px;height:52px;background:{ORANGE};color:#fff;font-weight:900;font-size:30px;text-align:center;line-height:52px">{esc(half)}戦</div>')
     p.append(f'<div class="abs" style="left:200px;top:172px;width:850px;color:{YELLOW};font-weight:900;font-size:34px;line-height:52px">{esc(meta["theme_short"])}</div>')
     # 映像枠（240〜848）は透明
-    p.append('<div class="abs" style="left:0;top:240px;width:1080px;height:608px;background:transparent"></div>')
     if scene.get("caption"):
-        p.append(f'<div class="abs" style="left:40px;top:690px;width:1000px;background:rgba(0,0,0,.75);color:#fff;font-weight:700;font-size:34px;padding:12px 20px;border-radius:6px;text-align:center;line-height:1.4">{esc(scene["caption"])}</div>')
+        p.append(f'<div class="abs" style="left:30px;top:880px;width:1020px;background:#000;color:#fff;font-weight:700;font-size:40px;padding:16px 24px;border-radius:6px;text-align:center;line-height:1.45">{esc(scene["caption"])}</div>')
     if scene.get("panel"):
-        p.append(f'<div class="abs panel" style="left:40px;top:880px;width:660px">{panel_html(scene["panel"], 1.45)}</div>')
+        p.append(f'<div class="abs panel" style="left:30px;top:{1060 if scene.get("caption") else 900}px;width:720px">{panel_html(scene["panel"], 1.6)}</div>')
     if scene.get("explain"):
-        p.append(f'<div class="abs" style="left:40px;top:880px;width:1000px;background:#fff;border-left:14px solid {BLUE};color:{NAVY};font-weight:900;font-size:44px;padding:20px 26px;line-height:1.45"><div style="color:{BLUE};font-size:28px">横塚の解説</div>{esc(scene["explain"])}</div>')
-    p.append(mini_char(780, 1300, 220))
+        p.append(f'<div class="abs" style="left:30px;top:900px;width:1020px;background:#fff;border-left:14px solid {BLUE};color:{NAVY};font-weight:900;font-size:44px;padding:20px 26px;line-height:1.45"><div style="color:{BLUE};font-size:28px">横塚の解説</div>{esc(scene["explain"])}</div>')
+    p.append(logo(790, 1420, 1.5))
+    p.append(mini_char(800, 1530, 230))
     p.append(f'<div class="abs" style="left:0;top:1868px;width:1080px;height:52px;background:{NAVY};border-top:3px solid {ORANGE}"></div><div class="abs" style="left:0;top:1868px;width:150px;height:52px;background:{RED};color:#fff;font-weight:900;font-size:30px;line-height:52px;text-align:center">NEWS</div>')
-    p.append(f'<div class="abs" style="left:40px;top:860px;color:#cfd8ea;font-size:20px">{esc(meta["citation"])}</div>')
+    p.append(f'<div class="abs" style="right:16px;top:812px;color:#fff;font-size:20px;text-shadow:0 1px 3px #000">{esc(meta["citation"])}</div>')
     return "".join(p)
 
 
@@ -239,7 +247,7 @@ def short_title():
 
 
 def short_end():
-    studio = (ASSETS / "studio.png").as_uri()
+    studio = data_uri(ASSETS / "studio.png")
     return f"""
 <div class="abs" style="left:0;top:0;width:1080px;height:1920px;background:{NAVY}"></div>
 <div class="abs" style="left:0;top:0;width:1080px;height:300px;background:#fff"></div>
