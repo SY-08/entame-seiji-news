@@ -339,7 +339,8 @@ def add_ticker(src, out, w, h, bar_h, label_w, text, skip_ranges):
     fc = (f"[0:v]split[a][b];[1:v]format=rgba[t];[a][t]overlay=x='{label_w}+{w}-mod(t*{speed},{sw}+{w})':y={h - bar_h + 2}:enable='{en}'[m];"
           f"[b]crop={label_w}:{bar_h}:0:{h - bar_h}[lab];[m][lab]overlay=0:{h - bar_h}[o]")
     run(["ffmpeg", "-v", "error", "-y", "-i", str(src), "-loop", "1", "-i", str(strip), "-filter_complex", fc, "-map", "[o]", "-map", "0:a",
-         "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "copy", "-shortest", "-movflags", "+faststart", str(out)])
+         "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-c:a", "aac", "-ar", "48000",
+         "-shortest", "-movflags", "+faststart", str(out)])
 
 
 # ---------------------------------------------------------------- 組み立て

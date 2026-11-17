@@ -37,9 +37,9 @@ def clip(i, src, a, b, **kw):
         tts.append({"id": i, "speaker": "横塚", "text": kw.get("voice", kw["explain"])})
 
 
-def short(i, half, src, a, b, caption, theme):
+def short(i, half, src, a, b, caption, theme, panel=None):
     S.append({"id": i, "type": "clip", "src": f"clips/{src}.mp4", "start": a, "end": b, "short": half,
-              "main": False, "caption": caption, "theme_short": theme})
+              "main": False, "caption": caption, "theme_short": theme, "panel": panel})
 
 
 TREE = {"kind": "tree", "title": "11/17 参議院 法務委員会", "sub": "打越さく良（立憲）の質問テーマ",
@@ -102,12 +102,12 @@ tts.append({"id": "s32", "speaker": "横塚", "text": "チャンネル登録と�
 
 # ---- ショート（本編には入れない）
 T1, T2 = "難民認定の「見えない基準」", "帰化の要件 5年→10年？"
-short("h1", "前半", "c01", 90.9, 104.8, "黒塗りのところに具体的な基準がある。すべて明らかにしていただきたい（打越議員）", T1)
-short("h2", "前半", "c02", 5.5, 23.1, "公表すれば濫用的な申請が想定されるため、お答えを差し控えたい（入管庁）", T1)
-short("h3", "前半", "c04", 41.5, 56.7, "不透明ということは当たらないと考えております（山下法務大臣）", T1)
-short("k1", "後半", "c05", 3.6, 20.6, "法律改正すらしないで、帰化の居住期間を原則10年以上に（打越議員）", T2)
-short("k2", "後半", "c06", 24.0, 34.8, "条件を満たしていても、許可するかは法務大臣の裁量（法務省）", T2)
-short("k3", "後半", "c06", 57.8, 69.2, "裁量の運用の見直しなので、法改正や有識者の意見聴取は経ていない（法務省）", T2)
+short("h1", "前半", "c01", 90.9, 104.8, "黒塗りのところに具体的な基準がある。すべて明らかにしていただきたい（打越議員）", T1, Q1)
+short("h2", "前半", "c02", 5.5, 23.1, "公表すれば濫用的な申請が想定されるため、お答えを差し控えたい（入管庁）", T1, A1)
+short("h3", "前半", "c04", 41.5, 56.7, "不透明ということは当たらないと考えております（山下法務大臣）", T1, A2)
+short("k1", "後半", "c05", 3.6, 20.6, "法律改正すらしないで、帰化の居住期間を原則10年以上に（打越議員）", T2, Q3)
+short("k2", "後半", "c06", 24.0, 34.8, "条件を満たしていても、許可するかは法務大臣の裁量（法務省）", T2, A3)
+short("k3", "後半", "c06", 57.8, 69.2, "裁量の運用の見直しなので、法改正や有識者の意見聴取は経ていない（法務省）", T2, A3)
 
 (D / "spec.json").write_text(json.dumps({"meta": meta, "scenes": S}, ensure_ascii=False, indent=1), encoding="utf-8")
 (D / "tts.json").write_text(json.dumps(tts, ensure_ascii=False, indent=1), encoding="utf-8")
