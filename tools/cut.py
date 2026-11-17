@@ -69,11 +69,17 @@ def cut_dvr(src, c, dst):
             "-ss", f"{off:.2f}", "-t", f"{b - a:.2f}"]
 
 
+def cut_hls(src, c, dst):
+    """衆議院のビデオライブラリなど、会議のはじめから始まる録画（m3u8）から切る。start は録画の開始時刻"""
+    a, b = sec(c["from"]) - sec(src["start"]), sec(c["to"]) - sec(src["start"])
+    return ["-user_agent", UA, "-headers", "Referer: https://www.shugiintv.go.jp/", "-ss", f"{a:.2f}", "-i", src["url"], "-t", f"{b - a:.2f}"]
+
+
 model = None
 for c in spec["cuts"]:
     src = spec["sources"][c["src"]]
     dst = out / f"{c['id']}.mp4"
-    inp = cut_files(src, c, dst) if src["type"] == "files" else cut_dvr(src, c, dst)
+    inp = {"files": cut_files, "dvr": cut_dvr, "hls": cut_hls}[src["type"]](src, c, dst)
     r = run(["ffmpeg", "-v", "error", "-y", *inp, "-vf", "scale=1280:720:flags=lanczos,setsar=1", "-r", "30",
              "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-ar", "48000", "-ac", "2",
              "-movflags", "+faststart", str(dst)])

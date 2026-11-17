@@ -1,0 +1,56 @@
+name: 朝の自動収録（今日の会議を見つけて取り込む）
+
+on:
+  schedule:
+    # 日本時間 9:23（UTC 0:23）、月〜金。参議院は会議の10分前から中継が始まる
+    - cron: "23 0 * * 1-5"
+    # 日本時間 12:53。午後から始まる会議を拾う
+    - cron: "53 3 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "見つけるだけで収録はしない（true/false）"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Tokyo
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q requests
+      - name: 今日の会議を探す
+        run: |
+          D=$(date +%F); mkdir -p "live/$D"
+          python tools/discover.py "live/$D/meetings_$(date +%H%M).json"
+          cp "live/$D/meetings_$(date +%H%M).json" meetings.json
+      - name: まだ収録していない会議だけ収録を始める
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          D=$(date +%F)
+          NEW=$(python - <<'PY'
+          import json, glob, os
+          d = os.popen("date +%F").read().strip()
+          started = set()
+          for f in glob.glob(f"live/{d}/started_*.txt"):
+              started |= set(open(f).read().split())
+          m = json.load(open("meetings.json"))
+          print(json.dumps([c for c in m["channels"] if c.split(":")[0] not in started]))
+          PY
+          )
+          echo "new=$NEW"
+          if [ "$NEW" != "[]" ] && [ "${{ inputs.dry_run }}" != "true" ]; then
+            gh workflow run record-sangiin.yml -R "${{ github.repository }}" -f channels="$NEW" -f minutes=330
+            python -c "import json;print('\n'.join(c.split(':')[0] for c in json.loads('$NEW')))" > "live/$D/started_$(date +%H%M).txt"
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add live && git commit -qm "今日の会議 $(date +%H:%M)" || true
+          git pull --rebase -q && git push -q
