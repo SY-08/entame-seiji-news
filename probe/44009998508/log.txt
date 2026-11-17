@@ -1,0 +1,19 @@
+src="js/common.js"
+src="./js/jQuery/jquery-3.7.1.min.js"
+src="./js/jQuery/jquery-migrate-3.4.1.min.js"
+src="./js/jQuery/lib/jquery.scrollTo.js"
+src="./js/jQuery/lib/jquery.blockUI.js?var=20240516"
+src="js/webtv.js?v=20240827"
+== https://www.webtv.sangiin.go.jp/webtv/js/common.js
+== https://www.webtv.sangiin.go.jp/webtv/js/webtv.js?v=20240827
+./calendar.php
+./faq.php
+./form.php
+./howto.php
+./kaigi_list.php
+./keyword_search.php
+./method.php
+./news.php
+./result_selecter.php
+/index.php
+detail.php?

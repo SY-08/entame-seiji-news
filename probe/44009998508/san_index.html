@@ -1,0 +1,198 @@
+<html>
+<head>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@sangiinwebtv" />
+<meta property="og:url" content="https://www.webtv.sangiin.go.jp/webtv/" />
+<meta property="og:title" content="参議院インターネット審議中継" />
+<meta property="og:description" content="参議院インターネット審議中継は、参議院の審議映像をストリーミング方式で配信しております。" />
+<meta property="og:image" content="https://www.webtv.sangiin.go.jp/webtv/images/x_summary_card.jpg" /><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>参議院インターネット審議中継</title>
+<link href="css/import.css?var=20250227" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/common.js"></script>
+<script src="./js/jQuery/jquery-3.7.1.min.js"></script>
+<script>jQuery.ajaxPrefilter(function(s){if(s.crossDomain){s.contents.script=false;}});</script>
+<script src="./js/jQuery/jquery-migrate-3.4.1.min.js"></script>
+<script src="./js/jQuery/lib/jquery.scrollTo.js" type="text/javascript"></script>
+<script src="./js/jQuery/lib/jquery.blockUI.js?var=20240516" type="text/javascript"></script>
+<script>
+function reloadTodayList(){
+	Reflesh=setInterval(function(){
+		$.ajax({
+			url: "./result_selecter.php",
+			cache: false,
+			type: "get",
+			data:{"mode":"today_reload","absdate":"2026-11-17"},
+			success: function(data){
+				$("#result_area").html(data);
+				meetingname_height2();
+				detail_click();
+			}
+		})
+	},3600000);
+}
+</script>
+</head>
+<body class="search-remarkContainer">
+<div id="faqTop"></div>
+<div style="cursor: pointer;" id="header_title">
+<h1><img class="pc" src="images/mainheader.jpg" alt="参議院インターネット審議中継"><img class="sp" src="images/mainheader_sp.jpg" alt="参議院インターネット審議中継"></h1>
+</div>
+<div id="header_sns_area">
+  <div class="header_sns clearfix">
+      <a href="https://x.com/sangiinwebtv" target="_blank"><img src="images/x_btn.png" alt=""></a>
+      <span>参議院審議中継X公式アカウント</span>
+  </div>
+</div>
+<div id="header_area">
+  <div id="header" class="clearfix">
+    <ul class="globalmenu">
+      <li class="menuHowto"><a href="#">ご利用方法</a></li>
+      <li class="menuFaq"><a href="#">よくある質問</a></li>
+      <li class="sanhp pc"><a href="https://www.sangiin.go.jp/" target="_blank">参議院ホームページ</a></li>
+      <li class="sanlive pc"><a href="https://www.shugiintv.go.jp/" target="_blank">衆議院審議中継</a></li>
+    </ul>
+  </div>
+</div>
+<div id="container" class="clearfix">
+  <input name="clicked_link" id="clicked_link" value="" type="hidden">
+
+  <!-- leftarea --> 
+  <div id="leftarea">
+    <div class="button-deliberation"><a href="./index.php" id="btnToday" >今日の審議中継</a></div>
+    <div id="calendar_area" class="pc">
+      <h3 class="titlebar"><img src="images/bar_calendar.gif" alt="審議中継カレンダー"></h3>
+      <div id="calendar" class="change_bg">
+      <img src="./js/jQuery/loading.gif" alt="Now Loading...">
+      </div>
+    </div>
+    <h3 class="titlebar pc"><img src="images/bar_meetingsearch.gif" alt="会議名からの検索"></h3>
+    <div id="meetingname" class="pc">
+    <img src="./js/jQuery/loading.gif" alt="Now Loading...">
+    </div>
+  </div>
+  <!-- //leftarea -->
+
+  <!-- maincontent -->  
+  <div id="maincontent">
+    <!-- txt-search_area -->  
+    <div id="txt-search_area" class="clearfix">
+      <p id="search-method-link"><a href="#" id="search-method">検索方法</a></p>
+      <form name="search" method="post" id="search_form" onsubmit="return false;">
+        <span>
+        <input type="text" class="txt-area" value="" name="keyword" id="keyword">
+        <input id="searching" type="hidden" value="on" name="searching">
+        <input type="image" class="btn-area search_btn" src="images/top-search_area_btn.jpg" alt="検索" id="search_btn">
+        </span>
+      </form>
+      <p id="detail-search-link"><a href="#" id="detail-search">過去の会議を探す</a></p>
+    </div>
+    <!-- //txt-search_area -->
+
+    <!-- search_area -->
+    <div id="search_area" class="clearfix" style="display:none;">
+    <img src="./js/jQuery/loading.gif" alt="Now Loading...">
+    </div>
+    <div id="news">
+    <img src="./js/jQuery/loading.gif" alt="Now Loading...">
+    </div>
+    <!-- //search_area --> 
+
+    <div id="result_area">
+    <img src="./js/jQuery/loading.gif" alt="Now Loading...">
+    </div>
+    <div style="display: none;" id="howto_area" class="howtoContainer"> <img src="./js/jQuery/loading.gif" alt="Now Loading..."> </div>
+    <div style="display: none;" id="faq_area" class="faqContainer"> <img src="./js/jQuery/loading.gif" alt="Now Loading..."> </div>
+    <div style="display: none;" id="method_area" class="methodContainer"> <img src="./js/jQuery/loading.gif" alt="Now Loading..."> </div>
+    <div style="display: none;" id="detail_area" class="detailContainer"></div>
+<style>
+/* モーダルウィンドウのスタイル */
+.modal-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+}
+.modal-content {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 80%;
+	background: white;
+	padding: 0;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+	z-index: 1001;
+}
+.modal-content iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+</style>
+<div class="modal-overlay"></div>
+<div class="modal-content">
+	<iframe src="" frameborder="0"></iframe>
+</div>    <!-- end #maincontent --></div>
+  <!-- //maincontent -->
+  <br class="clearfloat">
+  <div id="page_back" class="sp"><p><a href="#page_top" id="goPageTop">▲ページトップに戻る</a></p></div>
+    
+  <!-- //container --></div>
+<div id="footer"><p>All rights reserved. Copyright(C), Senate, The National Diet of Japan.</p></div>
+<div id="bottom_margin"></div>
+
+<script type="text/javascript" src="js/webtv.js?v=20240827"></script>
+<script>
+window.addEventListener('message', function(e) {
+    //if (e.data.frameHeight) {
+      //詳細ページ表示時の処理
+        //document.getElementById('detail_frame').style.height = e.data.frameHeight + 'px';
+        //document.getElementById('detail_frame').style.width = '680px';
+        //document.getElementById('meetingname').style.height = '660px';
+
+        //プレイヤーが表示されるように上部へスクロール
+        //document.getElementById('maincontent').scrollIntoView({behavior: 'smooth', block: 'start'});
+
+    //}
+    //詳細ページ「戻る」クリック時の処理
+    if (e.data.doAction) {
+      if (e.data.doAction == 'backToResult') {        
+        document.getElementById('result_area').style.display = 'block';
+        document.getElementById('detail_area').innerHTML = "";
+        document.getElementById('detail_area').style.display = 'none';
+        //画面左の会議名リスト高さ調整
+        meetingname_height2(keep_meetingname_height);
+      }
+    }
+    // if (e.data.searching) {
+    //   if (e.data.searching == 'tool') {    
+    //   //検索ツール利用使用してた場合   
+    //     document.getElementById('search_area').style.display = 'block';
+    //     document.getElementById('txt-search_area').style.display = 'none';
+    //   }else{
+    //   //検索ツール利用使用してない場合
+    //     document.getElementById('search_area').style.display = 'none';
+    //     document.getElementById('txt-search_area').style.display = 'block';
+    //   }
+    // }
+    // if (e.data.vType) {
+    //   //LIVEの表示から戻ったのであれば「検索テキストボックス」「お知らせ」も表示するように戻す
+    //   if (e.data.vType == 'live') {    
+    //     document.getElementById('news').style.display = 'block';
+    //     document.getElementById('txt-search_area').style.display = 'block';
+    //   }
+    // }
+
+
+
+}, false);
+</script>
+</body>
+</html>
