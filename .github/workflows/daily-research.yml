@@ -1,0 +1,68 @@
+name: 夕方の自動リサーチ
+
+on:
+  schedule:
+    # 日本時間 17:07（UTC 8:07）、月〜金。20時公開に間に合わせる
+    - cron: "7 8 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "対象日（YYYY-MM-DD）。空欄なら今日"
+        required: false
+
+permissions:
+  contents: write
+  issues: write
+  id-token: write
+
+concurrency:
+  group: daily-research
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 対象日を決める
+        id: d
+        run: |
+          if [ -n "${{ inputs.date }}" ]; then D="${{ inputs.date }}"; else D=$(TZ=Asia/Tokyo date +%F); fi
+          echo "date=$D" >> "$GITHUB_OUTPUT"
+          mkdir -p "research/$D"
+
+      - name: Claudeが調べて台本を作る
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            対象日は ${{ steps.d.outputs.date }} です。
+            prompts/daily-research.md を読み、その手順どおりに作業してください。
+            出力先は research/${{ steps.d.outputs.date }}/ です。
+          claude_args: >-
+            --max-turns 80
+            --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+
+      - name: 結果をリポジトリに保存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research
+          git diff --cached --quiet || git commit -m "夕方の自動リサーチ ${{ steps.d.outputs.date }}"
+          git push
+
+      - name: 通知（Issueを作る）
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          D="${{ steps.d.outputs.date }}"
+          F="research/$D/summary.md"
+          if [ -f "$F" ]; then
+            gh issue create --title "【デイリー国会】$D の台本ができました" --body-file "$F"
+          else
+            gh issue create --title "【デイリー国会】$D 失敗しました" \
+              --body "summary.md ができていません。Actions のログを確認してください：${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          fi
