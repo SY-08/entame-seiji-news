@@ -1,0 +1,14 @@
+2488 player.js
+https://player.mediasp.jp/v1.10.0-603dd93
+https://player.mediasp.jp/v1.10.0-603dd93/iij-msp-player.js
+https://sangiin-live.live.ipcasting.jp/live/cpl6oed632pig7l1fg0g.h/dbtb210lufuc710sri30/channel-info.json
+https://static.mediasp.jp/live/poster/t1080/8/ceef10f174ac278e4b67b788d19334d0.png
+9332 channel_hash=cpl6oed632pig7l1fg0g
+9332 live_hash=dbtb210lufuc710sri30
+9333 channel_hash=cpl6ndumbb93lo02j6gg
+9333 live_hash=dbtb1u0lufuc710sri2g
+9334 channel_hash=cpl6m9d632pu6i7ccg70
+9334 live_hash=dbtb1tjl80ds71s5u9f0
+probe/44010867307/script.sh: line 12: syntax error near unexpected token `('
+probe/44010867307/script.sh: line 12: `yt-dlp -q --no-warnings --referer "https://www.shugiintv.go.jp/" --user-agent "$UA" -f best -o shu_56525.%(ext)s "$U" || ffmpeg -v warning -y -headers "Referer: https://www.shugiintv.go.jp/" -user_agent "$UA" -i "$U" -c copy shu_56525.ts'
+exit 2
