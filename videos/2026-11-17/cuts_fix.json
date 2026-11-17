@@ -1,0 +1,23 @@
+{
+ "sources": {
+  "houmu": {
+   "type": "files",
+   "dir": "rec_houmu",
+   "start": "09:30:01"
+  }
+ },
+ "cuts": [
+  {
+   "id": "a03",
+   "src": "houmu",
+   "from": "11:36:06",
+   "to": "11:36:35"
+  },
+  {
+   "id": "n02",
+   "src": "houmu",
+   "from": "11:55:05",
+   "to": "11:55:25"
+  }
+ ]
+}
