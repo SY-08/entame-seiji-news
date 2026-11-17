@@ -1,0 +1,4 @@
+200 21501 https://www.shugiintv.go.jp/jp/index.php?ex=TD
+200 21501 https://www.shugiintv.go.jp/jp/
+200 21501 https://www.shugiintv.go.jp/jp/index.php?ex=TD#
+200 21501 https://www.shugiintv.go.jp/jp/index.php?ex=TD#today

@@ -1,0 +1,22 @@
+[
+ {
+  "page": "https://www.shugiintv.go.jp/jp/index.php?ex=TD",
+  "m3u8": "http://hlslive.shugiintv.go.jp/_roomid_/amlst:_roomid_/playlist.m3u8",
+  "keyword_hit": true
+ },
+ {
+  "page": "https://www.shugiintv.go.jp/jp/",
+  "m3u8": "http://hlslive.shugiintv.go.jp/_roomid_/amlst:_roomid_/playlist.m3u8",
+  "keyword_hit": true
+ },
+ {
+  "page": "https://www.shugiintv.go.jp/jp/index.php?ex=TD#",
+  "m3u8": "http://hlslive.shugiintv.go.jp/_roomid_/amlst:_roomid_/playlist.m3u8",
+  "keyword_hit": true
+ },
+ {
+  "page": "https://www.shugiintv.go.jp/jp/index.php?ex=TD#today",
+  "m3u8": "http://hlslive.shugiintv.go.jp/_roomid_/amlst:_roomid_/playlist.m3u8",
+  "keyword_hit": true
+ }
+]
