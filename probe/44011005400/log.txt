@@ -1,0 +1,20 @@
+== naikaku
+{"config":{"start_time":"","end_time":"","published":"public","urls":{"image":"","preroll_cover":"","postroll_cover":""}},"status":{"config_last_modified":"2026-11-17T08:51:45+09:00","latest_pts":"2026-11-17T12:33:57.601+09:00","date":"2026-11-17T12:34:03+09:00","delay":6,"output":"active","subtitle":"active","program_uid":"dbtb210lufuc710sri30","program_id":9332,"program_start":"2026-11-17T09:30:01+09:00"},"schedules":[{"config":{"start_time":"2026-11-17T09:30:00+09:00","end_time":"2026-11-18T00:00:00+09:00","published":"public","use_dvr":"true","urls":{"image":"https://static.mediasp.jp/live/poster/t1080/8/ceef10f174ac278e4b67b788d19334d0.png","preroll_cover":"","postroll_cover":""}},"status":{"duration":11035.758,"expiration_date":"","program_id":9332,"program_start":"2026-11-17T09:30:01+09:00","program_end":"","program_uid":"dbtb210lufuc710sri30","subtitle":"active"}}],"manifest":"index.m3u8","version":"1.10.0-4b82a0d"}
+M=
+== houmu
+{"config":{"start_time":"","end_time":"","published":"public","urls":{"image":"","preroll_cover":"","postroll_cover":""}},"status":{"config_last_modified":"2026-11-17T08:51:44+09:00","latest_pts":"2026-11-17T12:31:54.477+09:00","date":"2026-11-17T12:34:03+09:00","delay":129,"output":"inactive","subtitle":"active","program_uid":"dbtb1u0lufuc710sri2g","program_id":9333,"program_start":"2026-11-17T09:30:01+09:00"},"schedules":[{"config":{"start_time":"2026-11-17T09:30:00+09:00","end_time":"2026-11-17T12:31:34+09:00","published":"public","use_dvr":"true","urls":{"image":"https://static.mediasp.jp/live/poster/t1080/7/881422bd05fa3e1e6b8446887f400b9c.png","preroll_cover":"","postroll_cover":""}},"status":{"duration":10912.635,"expiration_date":"2026-11-17T14:31:54+09:00","program_id":9333,"program_start":"2026-11-17T09:30:01+09:00","program_end":"2026-11-17T12:31:54+09:00","program_uid":"dbtb1u0lufuc710sri2g","subtitle":"active"}}],"manifest":"index.m3u8","version":"1.10.0-4b82a0d"}
+M=
+== keisan
+{"config":{"start_time":"","end_time":"","published":"public","urls":{"image":"","preroll_cover":"","postroll_cover":""}},"status":{"config_last_modified":"2026-11-17T08:51:42+09:00","latest_pts":"2026-11-17T12:33:58.601+09:00","date":"2026-11-17T12:34:04+09:00","delay":6,"output":"active","subtitle":"active","program_uid":"dbtb1tjl80ds71s5u9f0","program_id":9334,"program_start":"2026-11-17T09:30:01+09:00"},"schedules":[{"config":{"start_time":"2026-11-17T09:30:00+09:00","end_time":"2026-11-18T00:00:00+09:00","published":"public","use_dvr":"true","urls":{"image":"https://static.mediasp.jp/live/poster/t1080/6/0aa7a8a8186a5f4983b4a733042bb306.png","preroll_cover":"","postroll_cover":""}},"status":{"duration":11036.726,"expiration_date":"","program_id":9334,"program_start":"2026-11-17T09:30:01+09:00","program_end":"","program_uid":"dbtb1tjl80ds71s5u9f0","subtitle":"active"}}],"manifest":"index.m3u8","version":"1.10.0-4b82a0d"}
+M=
+[https @ 0x59719eca0680] No trailing CRLF found in HTTP header. Adding it.
+[mpegts @ 0x59719f61bac0] PES packet size mismatch
+[mpegts @ 0x59719f61bac0] Packet corrupt (stream = 1, dts = 84084).
+[hls @ 0x59719ec9ffc0] Packet corrupt (stream = 4, dts = 81081).
+-rw-r--r-- 1 runner runner 102850664 Nov 17 12:35 shu_56525.ts
+program|stream|width=640|height=360
+stream|
+
+stream|width=640|height=360
+stream|
+format|duration=1761.059833
