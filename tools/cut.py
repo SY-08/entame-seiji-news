@@ -71,7 +71,10 @@ def cut_dvr(src, c, dst):
 
 def cut_hls(src, c, dst):
     """衆議院のビデオライブラリなど、会議のはじめから始まる録画（m3u8）から切る。start は録画の開始時刻"""
-    a, b = sec(c["from"]) - sec(src["start"]), sec(c["to"]) - sec(src["start"])
+    if "from_sec" in c:  # discover_shugiin.py の offset（録画の先頭からの秒）で指定
+        a, b = float(c["from_sec"]), float(c["to_sec"])
+    else:
+        a, b = sec(c["from"]) - sec(src["start"]), sec(c["to"]) - sec(src["start"])
     return ["-user_agent", UA, "-headers", "Referer: https://www.shugiintv.go.jp/", "-ss", f"{a:.2f}", "-i", src["url"], "-t", f"{b - a:.2f}"]
 
 
