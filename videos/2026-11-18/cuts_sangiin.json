@@ -1,0 +1,9 @@
+{"sources": {"tokubetsu": {"type": "files", "dir": "rec_s9336", "start": "09:30:00"}},
+ "cuts": [
+  {"id": "a00", "src": "tokubetsu", "from": "10:04:48", "to": "10:05:05"},
+  {"id": "a01", "src": "tokubetsu", "from": "10:24:34", "to": "10:25:01"},
+  {"id": "a02", "src": "tokubetsu", "from": "10:24:59", "to": "10:25:30"},
+  {"id": "a03", "src": "tokubetsu", "from": "10:25:26", "to": "10:25:46"},
+  {"id": "a04", "src": "tokubetsu", "from": "10:09:00", "to": "10:09:33"},
+  {"id": "a05", "src": "tokubetsu", "from": "10:10:17", "to": "10:10:55"}
+ ]}
