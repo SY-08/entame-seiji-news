@@ -1,0 +1,27 @@
+{
+ "date": "2026-11-17",
+ "house": "衆議院",
+ "meetings": [
+  {
+   "deli_id": "56525",
+   "name": "政治改革特別委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1117-1210-01/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "井上英孝",
+     "group": "政治改革特別委員長",
+     "clock": "12:10",
+     "minutes": "01",
+     "offset": 1214.5
+    },
+    {
+     "name": "加藤勝信",
+     "group": "自由民主党・無所属の会",
+     "clock": "12:11",
+     "minutes": "06",
+     "offset": 1257.2
+    }
+   ]
+  }
+ ]
+}
