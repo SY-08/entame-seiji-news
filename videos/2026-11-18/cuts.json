@@ -1,0 +1,100 @@
+{
+ "sources": {
+  "seikai": {
+   "type": "hls",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1118-1140-01/playlist.m3u8",
+   "start": "00:00:00"
+  },
+  "tokubetsu": {
+   "type": "files",
+   "dir": "rec_s9336",
+   "start": "09:30:00"
+  }
+ },
+ "cuts": [
+  {
+   "id": "f00",
+   "src": "seikai",
+   "from_sec": 2216.9,
+   "to_sec": 2229.9
+  },
+  {
+   "id": "f01",
+   "src": "seikai",
+   "from_sec": 2435.4,
+   "to_sec": 2450.9
+  },
+  {
+   "id": "f02",
+   "src": "seikai",
+   "from_sec": 2560.4,
+   "to_sec": 2574.4
+  },
+  {
+   "id": "s00",
+   "src": "seikai",
+   "from_sec": 3211.4,
+   "to_sec": 3223.4
+  },
+  {
+   "id": "s01",
+   "src": "seikai",
+   "from_sec": 3264.9,
+   "to_sec": 3278.4
+  },
+  {
+   "id": "s02",
+   "src": "seikai",
+   "from_sec": 3387.9,
+   "to_sec": 3399.9
+  },
+  {
+   "id": "i00",
+   "src": "tokubetsu",
+   "from": "11:14:15",
+   "to": "11:14:30"
+  },
+  {
+   "id": "i01",
+   "src": "tokubetsu",
+   "from": "11:22:20",
+   "to": "11:22:53"
+  },
+  {
+   "id": "i02",
+   "src": "tokubetsu",
+   "from": "11:23:49",
+   "to": "11:24:09"
+  },
+  {
+   "id": "i03",
+   "src": "tokubetsu",
+   "from": "11:24:20",
+   "to": "11:24:48"
+  },
+  {
+   "id": "o00",
+   "src": "tokubetsu",
+   "from": "12:07:55",
+   "to": "12:08:06"
+  },
+  {
+   "id": "o01",
+   "src": "tokubetsu",
+   "from": "12:15:09",
+   "to": "12:15:38"
+  },
+  {
+   "id": "o02",
+   "src": "tokubetsu",
+   "from": "12:16:25",
+   "to": "12:16:50"
+  },
+  {
+   "id": "o03",
+   "src": "tokubetsu",
+   "from": "12:18:04",
+   "to": "12:18:34"
+  }
+ ]
+}
