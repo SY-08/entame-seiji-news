@@ -3,6 +3,146 @@
  "house": "衆議院",
  "meetings": [
   {
+   "deli_id": "56526",
+   "name": "内閣委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1118-0900-15/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "井出庸生",
+     "group": "内閣委員長",
+     "clock": "9:00",
+     "minutes": "02",
+     "offset": 1192.7
+    },
+    {
+     "name": "吉原祥子",
+     "group": "参考人 公益財団法人東京財団政策研究部マネージャー",
+     "clock": "9:02",
+     "minutes": "07",
+     "offset": 1303.1
+    },
+    {
+     "name": "仲松正人",
+     "group": "参考人 弁護士",
+     "clock": "9:09",
+     "minutes": "10",
+     "offset": 1765.4
+    },
+    {
+     "name": "神作裕之",
+     "group": "参考人 学習院大学法学部教授",
+     "clock": "9:19",
+     "minutes": "11",
+     "offset": 2342.4
+    },
+    {
+     "name": "海渡雄一",
+     "group": "参考人 弁護士",
+     "clock": "9:30",
+     "minutes": "10",
+     "offset": 2987.6
+    },
+    {
+     "name": "文月涼",
+     "group": "自由民主党・無所属の会",
+     "clock": "9:40",
+     "minutes": "17",
+     "offset": 3625.9
+    },
+    {
+     "name": "山崎正恭",
+     "group": "中道",
+     "clock": "9:57",
+     "minutes": "14",
+     "offset": 4610.6
+    },
+    {
+     "name": "黒田征樹",
+     "group": "日本維新の会",
+     "clock": "10:11",
+     "minutes": "15",
+     "offset": 5479.6
+    },
+    {
+     "name": "森ようすけ",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "10:26",
+     "minutes": "16",
+     "offset": 6370.6
+    },
+    {
+     "name": "川裕一郎",
+     "group": "参政党",
+     "clock": "10:42",
+     "minutes": "15",
+     "offset": 7323.3
+    },
+    {
+     "name": "高山聡史",
+     "group": "チームみらい",
+     "clock": "10:57",
+     "minutes": "15",
+     "offset": 8222.7
+    },
+    {
+     "name": "畑野君枝",
+     "group": "日本共産党",
+     "clock": "11:12",
+     "minutes": "16",
+     "offset": 9147.9
+    },
+    {
+     "name": "井出庸生",
+     "group": "内閣委員長",
+     "clock": "13:00",
+     "minutes": "01",
+     "offset": 15592.1
+    },
+    {
+     "name": "近藤和也",
+     "group": "中道",
+     "clock": "13:01",
+     "minutes": "37",
+     "offset": 15647.7
+    },
+    {
+     "name": "長妻昭",
+     "group": "中道",
+     "clock": "13:38",
+     "minutes": "37",
+     "offset": 17903.5
+    },
+    {
+     "name": "森ようすけ",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "14:15",
+     "minutes": "47",
+     "offset": 20127.7
+    },
+    {
+     "name": "川裕一郎",
+     "group": "参政党",
+     "clock": "15:02",
+     "minutes": "25",
+     "offset": 22945.8
+    },
+    {
+     "name": "高山聡史",
+     "group": "チームみらい",
+     "clock": "15:27",
+     "minutes": "20",
+     "offset": 24434.7
+    },
+    {
+     "name": "畑野君枝",
+     "group": "日本共産党",
+     "clock": "15:47",
+     "minutes": "15",
+     "offset": 25633.3
+    }
+   ]
+  },
+  {
    "deli_id": "56527",
    "name": "政治改革特別委員会",
    "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1118-1140-01/playlist.m3u8",
