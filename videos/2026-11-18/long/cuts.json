@@ -1,0 +1,41 @@
+{
+ "sources": {
+  "seikai": {
+   "type": "hls",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1118-1140-01/playlist.m3u8",
+   "start": "00:00:00"
+  }
+ },
+ "cuts": [
+  {
+   "id": "L_hasegawa",
+   "src": "seikai",
+   "from_sec": 1255.1,
+   "to_sec": 1652.4
+  },
+  {
+   "id": "L_ochiai",
+   "src": "seikai",
+   "from_sec": 1652.4,
+   "to_sec": 1953.8
+  },
+  {
+   "id": "L_aoyagi",
+   "src": "seikai",
+   "from_sec": 1953.8,
+   "to_sec": 2217.9
+  },
+  {
+   "id": "L_furukawa",
+   "src": "seikai",
+   "from_sec": 2217.9,
+   "to_sec": 2594.0
+  },
+  {
+   "id": "L_shiokawa",
+   "src": "seikai",
+   "from_sec": 3212.4,
+   "to_sec": 3600
+  }
+ ]
+}
