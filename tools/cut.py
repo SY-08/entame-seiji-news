@@ -75,7 +75,7 @@ def cut_hls(src, c, dst):
         a, b = float(c["from_sec"]), float(c["to_sec"])
     else:
         a, b = sec(c["from"]) - sec(src["start"]), sec(c["to"]) - sec(src["start"])
-    return ["-user_agent", UA, "-headers", "Referer: https://www.shugiintv.go.jp/", "-ss", f"{a:.2f}", "-i", src["url"], "-t", f"{b - a:.2f}"]
+    return ["-user_agent", UA, "-headers", f"Referer: {src.get('referer', 'https://www.shugiintv.go.jp/')}", "-ss", f"{a:.2f}", "-i", src["url"], "-t", f"{b - a:.2f}"]
 
 
 model = None
