@@ -1,0 +1,34 @@
+{
+ "date": "2026-11-09",
+ "house": "衆議院",
+ "meetings": [
+  {
+   "deli_id": "56516",
+   "name": "ベトナム共産党書記長兼国家主席夫妻歓迎会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1109-1600-00/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "森英介",
+     "group": "衆議院議長",
+     "clock": "16:24",
+     "minutes": "03",
+     "offset": 2642.4
+    },
+    {
+     "name": "トー・ラム",
+     "group": "ベトナム共産党中央執行委員会書記長・ベトナム社会主義共和国主席",
+     "clock": "16:27",
+     "minutes": "19",
+     "offset": 2851.6
+    },
+    {
+     "name": "関口昌一",
+     "group": "参議院議長",
+     "clock": "16:46",
+     "minutes": "03",
+     "offset": 3996.0
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,249 @@
+<html><head>
+<meta name="viewport" content="width=device-width,initial-scale=1">     
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="css/import.css?var=20240531" rel="stylesheet" type="text/css">
+
+<div id="detail-contents">
+<div id="movie-area">
+<script src="https://public.mediasp.jp/v1/player?hash=dble9rfgfhhs72u6pd3g&forward_sec=10&playback_speed_steps=11"></script>
+</div>
+
+<style>
+#detail-contents #detail-contents-inner3 {
+	text-align:left;
+	padding: 15px;
+	padding-top: 2px;
+	padding-bottom: 3px;
+	/* height:15%; */
+	/* overflow-y: scroll; */
+	/* border:solid 1px #ccc; */
+	margin: 0;
+	margin-top: 10px;
+	width: 610px;
+	font-size: 80%;
+}
+</style>
+
+    <div id="detail-contents-inner">
+	<span>中継映像に表示される字幕は、音声自動認識システムにより自動的・機械的に付与されるものであり、誤変換が生じる場合がありますのであらかじめご了承の上、ご利用ください。なお、字幕は令和6年8月以降に中継された会議で利用できます。<br>
+本会議、委員会等の会議の公式な記録は会議録であり、公式な記録を確認する場合は会議録をご覧ください。<br>
+ご利用者においては、正確ではないものも含め字幕の付いた中継映像を転載等して揶揄するなどの行為は、本院のインターネット審議中継の意図するところではなく、また、発言者及び本院の著作権の侵害となり責任を問われるおそれがあることから、ご遠慮いただきますようお願いいたします。<br>
+字幕の正確性について参議院が保証するものではなく、あくまでも視聴者の責任において参考としてご利用ください。<br><br></span>
+	<dl class="date">
+      <dt>開会日</dt><dd>2026年11月5日</dd>
+    </dl>
+    <dl class="date">
+      <dt>会議名</dt><dd>環境委員会</dd>
+    </dl>
+    <dl class="date">
+      <dt>審議時間</dt><dd>約3時間42分</dd>
+    </dl>
+
+    <!--会議の経過-->
+    <h3>会議の経過</h3>
+    <span>　　環境委員会（第二回） <br>　　　政府参考人の出席を求めることを決定した。 <br>　　　環境行政等の諸施策に関する件について笹川国務大臣、畦元環境 <br>　　　副大臣、石原環境大臣政務官、石井環境大臣政務官、青島国土交 <br>　　　通大臣政務官及び政府参考人に対し質疑を行った。</span>
+
+<p class="mt30px details_btn" align="center"><a href="#1784.14" class="play2"><img src="images/details_btn.gif" alt="会議の最初から見る"></a></p>
+
+ <!--発言者一覧-->
+    <h3>発言者一覧</h3>
+     <ul>
+<li><a href='#1850.73' class='play2'>猪口邦子(環境委員長)</a></li>
+<li><a href='#1924.19' class='play2'>永井学(自由民主党・無所属の会)</a></li>
+<li><a href='#3137.83' class='play2'>三上えり(立憲民主・無所属)</a></li>
+<li><a href='#5287.97' class='play2'>浜野喜史(国民民主党・新緑風会)</a></li>
+<li><a href='#6504.82' class='play2'>横山信一(公明党)</a></li>
+<li><a href='#7683.32' class='play2'>串田誠一(日本維新の会)</a></li>
+<li><a href='#12655.17' class='play2'>猪口邦子(環境委員長)</a></li>
+<li><a href='#12688.29' class='play2'>梅村みずほ(参政党)</a></li>
+<li><a href='#13889.97' class='play2'>奥田ふみよ(いのちの党)</a></li>
+<li><a href='#15140.00' class='play2'>高良沙哉(沖縄の風)</a></li>
+<li><a href='#16296.34' class='play2'>尾辻朋実(チームみらい・無所属の会)</a></li>
+<li><a href='#17479.23' class='play2'>望月良男(各派に属しない議員)</a></li>
+    </ul>
+   </div>
+
+	<div>
+	<a href="#" class="detail_back" onclick="backToResult()">戻る</a>
+	</div>
+
+</div>
+
+
+<script>
+	//親ページからのメッセージ受信時の処理
+	window.addEventListener('message', function(event) {
+		if (event.data.action === 'initializePlayer') {
+			// プレイヤーがロードされているか確認する
+			var video = document.querySelector('video');
+			if (video) {
+									video.currentTime = 1784.14; // 再生開始位置を設定
+				
+				// プレイヤーの準備が整ったら
+				video.addEventListener('loadeddata', () => {
+
+					//リンクリックでの再生時であれば自動再生する
+					if (event.data.videoplay === 'auto') {
+						//初期表示時にクリックして自動的に再生開始させる
+						video.click();
+						video.play().then(() => {
+							console.log('Video is playing');
+						}).catch(error => {
+							console.error('Error attempting to play the video:', error);
+						});
+					}
+
+				});
+			} else {
+				console.error('Video element not found');
+			}
+		}
+	});
+</script>
+
+
+<script>
+	var video = document.querySelector('video');
+
+	//クリック時の頭出し再生開始
+	function playStart(second) {
+		// video 要素が存在するかチェック
+		if (video) {
+			video.currentTime = second; // 指定された秒数に設定
+
+			// ビデオが再生中か確認
+			if (!video.paused && !video.ended) {
+				video.play(); // 再生開始
+			}else{
+			// 停止中ならクリックして再生開始
+				video.click(); 
+			}
+
+//			console.log('再生開始');
+		} else {
+			console.log("ページに video 要素が存在しません。");
+		}
+
+		//動画再生時に動画部分へのスクロール実施
+		if (window.parent && window.parent !== window) {
+			var detailArea = window.parent.document.getElementById('detail_area');
+			if (detailArea) {
+				detailArea.scrollIntoView({behavior: 'smooth', block: 'start'});
+			}
+		}
+
+
+	}
+    // イベントリスナーを追加するための関数
+    function clickPlay() {
+        // .play2 クラスを持つすべての要素に対してイベントリスナーを設定
+        var links = document.querySelectorAll('.play2');
+        links.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();  // デフォルトのアンカー動作を防止
+                var href = this.getAttribute('href');  // href 属性を取得
+                var seconds = parseFloat(href.substring(1));  // #を除いて数値に変換
+                playStart(seconds);  // 抽出した数値を関数に渡す
+            });
+        });
+    }
+    // ページロード時にイベントリスナーを設定
+    document.addEventListener('DOMContentLoaded', clickPlay);
+
+
+	//「戻る」クリック時の処理
+	function backToResult() {
+		var searching ='';
+		var direct = 0;
+		var fromtop = 0;
+		const message = {
+			doAction: 'backToResult'
+		};
+
+		// 親ページにメッセージを送信
+		window.parent.postMessage(message, "*");
+
+		if (searching == 'tool') {    
+		//検索ツール利用使用してた場合   
+			parent.document.getElementById('search_area').style.display = 'block';
+			parent.document.getElementById('txt-search_area').style.display = 'none';
+		}else{
+		//検索ツール利用使用してない場合
+			parent.document.getElementById('search_area').style.display = 'none';
+			parent.document.getElementById('txt-search_area').style.display = 'block';
+		}
+
+		//トップ画面からの遷移もしくは直リンクからの表示に戻るのであれば「検索テキストボックス」「お知らせ」も表示するように戻す
+		if ( (fromtop) || (direct) ) {    
+			// parent.document.getElementById('news').style.display = 'block';
+			// parent.document.getElementById('txt-search_area').style.display = 'block';
+			parent.document.location.href="/webtv/index.php";
+		}
+
+	}
+
+
+
+	window.onload = function() {
+
+		// 詳細情報画面の高さ調整
+		var movieArea = document.getElementById('movie-area');
+		var detailFrame = parent.document.getElementById('detail_frame');
+
+		//alert(height);
+
+		if (movieArea.offsetHeight + 500 + 100 > detailFrame.offsetHeight) {
+			var height = movieArea.offsetHeight + 500 + 100;
+			//detailFrame.style.height = height + 'px'; // 必要に応じて高さを設定
+		}
+		//alert(height);
+
+
+		// 詳細情報表示部分の高さ調整
+		var dcih = detailFrame.offsetHeight - movieArea.offsetHeight - 55;
+		if (dcih > 0) {
+			document.getElementById('detail-contents-inner').style.height = dcih + 'px';
+		}
+
+		////var height = document.body.scrollHeight + 280;
+		//window.parent.postMessage({frameHeight: height}, "*");
+
+		//プレイヤーが表示されるように上部へスクロール
+		parent.document.getElementById('maincontent').scrollIntoView({behavior: 'smooth', block: 'start'});
+
+        parent.document.getElementById('detail_frame').style.height = height + 'px';
+        //parent.document.getElementById('detail_frame').style.width = '680px';
+        parent.document.getElementById('meetingname').style.height = '660px';
+	};
+
+	// video 要素が存在するかチェック
+	if (video) {
+		//公開時間、休憩時間スキップ処理
+		video.addEventListener('timeupdate', function() {
+			//console.log("timeupdate発生");
+			var curTime = video.currentTime;
+			//console.log(curTime);
+			//開会までスキップ
+			if( (0 <= curTime) && (curTime < 1784.14) ){
+				//console.log("開会スキップ");
+				video.currentTime = 1784.14;
+			}
+			//散会後にストップ
+			if(18773.99 <= curTime){
+				//console.log("散会スキップ＆ストップ");
+				video.currentTime = 18773.99;
+				//一時停止
+				video.pause();
+			}
+			//休憩をスキップ
+			if( (curTime >= 8934.29) && (curTime < 12589.14) ){
+				//console.log("休憩スキップ");
+				video.currentTime = 12589.14;
+			}
+		});
+	}else{
+		//console.log('video 要素が存在しない');
+		//alert('video 要素が存在しない');
+	}
+</script>
+</body></html>

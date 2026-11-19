@@ -1,0 +1,139 @@
+{
+ "date": "2026-11-12",
+ "house": "衆議院",
+ "meetings": [
+  {
+   "deli_id": "56521",
+   "name": "憲法審査会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1112-1000-18/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "古屋圭司",
+     "group": "憲法審査会会長",
+     "clock": "10:00",
+     "minutes": "01",
+     "offset": 1207.6
+    },
+    {
+     "name": "新藤義孝",
+     "group": "自由民主党・無所属の会",
+     "clock": "10:01",
+     "minutes": "08",
+     "offset": 1268.8
+    },
+    {
+     "name": "國重徹",
+     "group": "中道",
+     "clock": "10:09",
+     "minutes": "07",
+     "offset": 1745.8
+    },
+    {
+     "name": "阿部圭史",
+     "group": "日本維新の会",
+     "clock": "10:16",
+     "minutes": "07",
+     "offset": 2165.2
+    },
+    {
+     "name": "玉木雄一郎",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "10:23",
+     "minutes": "02",
+     "offset": 2590.5
+    },
+    {
+     "name": "新藤義孝",
+     "group": "自由民主党・無所属の会",
+     "clock": "10:25",
+     "minutes": "01",
+     "offset": 2696.2
+    },
+    {
+     "name": "阿部圭史",
+     "group": "日本維新の会",
+     "clock": "10:26",
+     "minutes": "01",
+     "offset": 2776.8
+    },
+    {
+     "name": "玉木雄一郎",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "10:27",
+     "minutes": "04",
+     "offset": 2852.7
+    },
+    {
+     "name": "和田政宗",
+     "group": "参政党",
+     "clock": "10:31",
+     "minutes": "07",
+     "offset": 3078.1
+    },
+    {
+     "name": "古川あおい",
+     "group": "チームみらい",
+     "clock": "10:38",
+     "minutes": "06",
+     "offset": 3452.8
+    },
+    {
+     "name": "畑野君枝",
+     "group": "日本共産党",
+     "clock": "10:44",
+     "minutes": "06",
+     "offset": 3829.4
+    },
+    {
+     "name": "古屋圭司",
+     "group": "憲法審査会会長",
+     "clock": "10:50",
+     "minutes": "02",
+     "offset": 4227.3
+    },
+    {
+     "name": "盛山正仁",
+     "group": "自由民主党・無所属の会",
+     "clock": "10:52",
+     "minutes": "04",
+     "offset": 4279.2
+    },
+    {
+     "name": "河西宏一",
+     "group": "中道",
+     "clock": "10:56",
+     "minutes": "05",
+     "offset": 4570.1
+    },
+    {
+     "name": "西田薫",
+     "group": "日本維新の会",
+     "clock": "11:01",
+     "minutes": "06",
+     "offset": 4871.1
+    },
+    {
+     "name": "浅野哲",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "11:07",
+     "minutes": "05",
+     "offset": 5211.0
+    },
+    {
+     "name": "北神圭朗",
+     "group": "自由民主党・無所属の会",
+     "clock": "11:12",
+     "minutes": "06",
+     "offset": 5497.1
+    },
+    {
+     "name": "本田太郎",
+     "group": "自由民主党・無所属の会",
+     "clock": "11:18",
+     "minutes": "05",
+     "offset": 5854.7
+    }
+   ]
+  }
+ ]
+}

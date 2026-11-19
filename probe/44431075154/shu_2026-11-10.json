@@ -1,0 +1,111 @@
+{
+ "date": "2026-11-10",
+ "house": "衆議院",
+ "meetings": [
+  {
+   "deli_id": "56517",
+   "name": "本会議",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1110-1300-00/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "森英介",
+     "group": "衆議院議長",
+     "clock": "13:02",
+     "minutes": "01",
+     "offset": 1320.0
+    },
+    {
+     "name": "前原誠司",
+     "group": "法務委員長",
+     "clock": "13:03",
+     "minutes": "02",
+     "offset": 1379.4
+    },
+    {
+     "name": "岩田和親",
+     "group": "経済産業委員長",
+     "clock": "13:05",
+     "minutes": "03",
+     "offset": 1513.9
+    },
+    {
+     "name": "井出庸生",
+     "group": "内閣委員長",
+     "clock": "13:08",
+     "minutes": "02",
+     "offset": 1699.7
+    },
+    {
+     "name": "原田直樹",
+     "group": "中道",
+     "clock": "13:10",
+     "minutes": "09",
+     "offset": 1801.4
+    },
+    {
+     "name": "川裕一郎",
+     "group": "参政党",
+     "clock": "13:19",
+     "minutes": "04",
+     "offset": 2371.9
+    },
+    {
+     "name": "高山聡史",
+     "group": "チームみらい",
+     "clock": "13:23",
+     "minutes": "04",
+     "offset": 2579.5
+    },
+    {
+     "name": "小野田紀美",
+     "group": "経済安全保障担当 感染症危機管理担当 外国人との秩序ある共生社会推進担当 内閣府特命担当大臣（経済安全保障）",
+     "clock": "13:27",
+     "minutes": "06",
+     "offset": 2832.0
+    },
+    {
+     "name": "山崎正恭",
+     "group": "中道",
+     "clock": "13:33",
+     "minutes": "21",
+     "offset": 3192.5
+    },
+    {
+     "name": "高見亮",
+     "group": "日本維新の会",
+     "clock": "13:54",
+     "minutes": "17",
+     "offset": 4468.6
+    },
+    {
+     "name": "石井啓一",
+     "group": "衆議院副議長",
+     "clock": "14:11",
+     "minutes": "01",
+     "offset": 5459.7
+    },
+    {
+     "name": "深作ヘスス",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "14:11",
+     "minutes": "26",
+     "offset": 5467.0
+    },
+    {
+     "name": "川裕一郎",
+     "group": "参政党",
+     "clock": "14:37",
+     "minutes": "09",
+     "offset": 7019.9
+    },
+    {
+     "name": "土橋章宏",
+     "group": "チームみらい",
+     "clock": "14:46",
+     "minutes": "11",
+     "offset": 7568.7
+    }
+   ]
+  }
+ ]
+}
