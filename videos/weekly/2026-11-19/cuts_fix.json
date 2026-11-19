@@ -1,0 +1,26 @@
+{
+ "sources": {
+  "yosan1019": {
+   "type": "hls",
+   "start": "00:00:00",
+   "url": "https://sangiin-vod.live.ipcasting.jp/live/dirty/9/2f394551f6a3e68ec7b9ee8ccc764938/index_161315518726326.m3u8",
+   "referer": "https://www.webtv.sangiin.go.jp/"
+  }
+ },
+ "cuts": [
+  {
+   "id": "t02",
+   "src": "yosan1019",
+   "from_sec": 18890.5,
+   "to_sec": 18918.5,
+   "note": "高市：集めすぎず…新しい経済財政運営を始めていく（語尾まで）"
+  },
+  {
+   "id": "k04",
+   "src": "yosan1019",
+   "from_sec": 18950.0,
+   "to_sec": 18967.0,
+   "note": "神谷：経世済民に大事なのは教育（語尾まで）"
+  }
+ ]
+}
