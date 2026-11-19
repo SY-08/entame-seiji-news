@@ -1,0 +1,10 @@
+{
+ "_note": "党首（または幹部）×高市総理の場面の在庫。used に使った回の日付を入れる。確認＝高市総理の答弁を映像・字幕で確かめたか。",
+ "items": [
+  {"date": "2026-10-19", "house": "参議院", "meeting": "予算委員会", "leader": "神谷宗幣", "party": "参政党", "category": "党首", "sid": 9267, "offset": [18708, 21009], "confirmed": true, "used": "2026-11-19"},
+  {"date": "2026-10-14", "house": "衆議院", "meeting": "予算委員会", "leader": "藤田文武", "party": "日本維新の会", "category": "党首（共同代表）", "note": "与党 VS 与党", "confirmed": false, "used": null},
+  {"date": "2026-10-09", "house": "参議院", "meeting": "本会議（代表質問）", "leader": "神谷宗幣", "party": "参政党", "category": "党首", "confirmed": false, "used": null},
+  {"date": "2026-10-08", "house": "衆議院", "meeting": "本会議（代表質問）", "leader": "玉木雄一郎", "party": "国民民主党", "category": "党首", "confirmed": false, "used": null},
+  {"date": "2026-11-13", "house": "参議院", "meeting": "消費税・支援金法案に関する特別委員会", "leader": "小池晃", "party": "日本共産党", "category": "幹部（書記局長）", "sid": 9329, "offset": [9691, 10598], "note": "幹部。党首がいない週の予備", "confirmed": false, "used": null}
+ ]
+}
