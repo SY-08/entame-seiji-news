@@ -1,12 +1,21 @@
-[
 {
-"start": 1.81,
-"end": 5.81,
-"text": "次に、神谷総兵さんの出義を行いたいと存じます。"
-},
-{
-"start": 5.81,
-"end": 7.81,
-"text": "神谷総兵さん"
+ "id": "x01",
+ "speaker": "有村治子",
+ "party": "自由民主党",
+ "role": "予算委員長",
+ "vod_offset": 18706.0,
+ "source": "引用：参議院インターネット審議中継（2026年10月19日 予算委員会）",
+ "transcript_note": "faster-whisper(small)の自動文字起こし。確定字幕は spec.json の caption。参院の字幕全文は subs/kamiya_1019.txt",
+ "rows": [
+  {
+   "start": 1.81,
+   "end": 5.81,
+   "text": "次に、神谷総兵さんの出義を行いたいと存じます。"
+  },
+  {
+   "start": 5.81,
+   "end": 7.81,
+   "text": "神谷総兵さん"
+  }
+ ]
 }
-]
