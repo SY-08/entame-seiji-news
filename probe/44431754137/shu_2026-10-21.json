@@ -1,0 +1,587 @@
+{
+ "date": "2026-10-21",
+ "house": "衆議院",
+ "meetings": [
+  {
+   "deli_id": "56454",
+   "name": "内閣委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1021-1210-01/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "井出庸生",
+     "group": "内閣委員長",
+     "clock": "12:10",
+     "minutes": "03",
+     "offset": 1198.0
+    },
+    {
+     "name": "木原稔",
+     "group": "内閣官房長官 沖縄基地負担軽減担当 拉致問題担当",
+     "clock": "12:13",
+     "minutes": "04",
+     "offset": 1406.3
+    },
+    {
+     "name": "山下貴司",
+     "group": "法務大臣 内閣府特命担当大臣（男女共同参画） 女性活躍担当 法制度検証・改革担当",
+     "clock": "12:17",
+     "minutes": "01",
+     "offset": 1649.6
+    },
+    {
+     "name": "赤澤亮正",
+     "group": "経済産業大臣 原子力経済被害担当 ＧＸ実行推進担当 産業競争力担当 中東情勢に伴う重要物資安定確保担当 ＡＸ社会実装担当 内閣府特命担当大臣（原子力損害賠償・廃炉等支援機構）",
+     "clock": "12:18",
+     "minutes": "01",
+     "offset": 1722.5
+    },
+    {
+     "name": "古川俊治",
+     "group": "デジタル大臣 ＡＩ・デジタル改革推進担当 サイバー安全保障担当 コンテンツ戦略担当 内閣府特命担当大臣（知的財産戦略 科学技術政策 宇宙政策 人工知能戦略 海洋政策 サイバー安全保障）",
+     "clock": "12:19",
+     "minutes": "07",
+     "offset": 1784.8
+    },
+    {
+     "name": "葉梨康弘",
+     "group": "国家公安委員会委員長 領土問題担当 ＣＢＲＮＥテロ対策担当 内閣府特命担当大臣（沖縄及び北方対策 消費者及び食品安全 アイヌ施策）",
+     "clock": "12:26",
+     "minutes": "05",
+     "offset": 2168.7
+    },
+    {
+     "name": "中司宏",
+     "group": "内閣府特命担当大臣（こども政策 少子化対策 若者活躍 規制改革 共生・共助）  行政改革担当 国家公務員制度担当",
+     "clock": "12:31",
+     "minutes": "06",
+     "offset": 2457.0
+    },
+    {
+     "name": "城内実",
+     "group": "日本成長戦略担当 賃上げ環境整備担当 スタートアップ担当 全世代型社会保障改革担当 内閣府特命担当大臣（経済財政政策）",
+     "clock": "12:37",
+     "minutes": "04",
+     "offset": 2806.2
+    },
+    {
+     "name": "小野田紀美",
+     "group": "経済安全保障担当 感染症危機管理担当 外国人との秩序ある共生社会推進担当 内閣府特命担当大臣（経済安全保障）",
+     "clock": "12:41",
+     "minutes": "04",
+     "offset": 3081.5
+    },
+    {
+     "name": "尾崎正直",
+     "group": "内閣官房副長官",
+     "clock": "12:45",
+     "minutes": "01",
+     "offset": 3252.7
+    },
+    {
+     "name": "中西祐介",
+     "group": "内閣官房副長官",
+     "clock": "12:45",
+     "minutes": "01",
+     "offset": 3315.7
+    },
+    {
+     "name": "塩崎彰久",
+     "group": "デジタル副大臣兼内閣府副大臣",
+     "clock": "12:45",
+     "minutes": "01",
+     "offset": 3341.3
+    },
+    {
+     "name": "谷川とむ",
+     "group": "内閣府副大臣",
+     "clock": "12:46",
+     "minutes": "01",
+     "offset": 3376.5
+    },
+    {
+     "name": "平沼正二郎",
+     "group": "内閣府副大臣",
+     "clock": "12:47",
+     "minutes": "01",
+     "offset": 3414.0
+    },
+    {
+     "name": "今井絵理子",
+     "group": "内閣府副大臣",
+     "clock": "12:47",
+     "minutes": "01",
+     "offset": 3446.8
+    },
+    {
+     "name": "武村展英",
+     "group": "法務副大臣兼内閣府副大臣",
+     "clock": "12:48",
+     "minutes": "01",
+     "offset": 3487.7
+    },
+    {
+     "name": "宮本周司",
+     "group": "経済産業副大臣兼内閣府副大臣",
+     "clock": "12:48",
+     "minutes": "01",
+     "offset": 3521.6
+    },
+    {
+     "name": "赤松健",
+     "group": "デジタル大臣政務官兼内閣府大臣政務官",
+     "clock": "12:49",
+     "minutes": "01",
+     "offset": 3552.9
+    },
+    {
+     "name": "繁本護",
+     "group": "内閣府大臣政務官",
+     "clock": "12:50",
+     "minutes": "01",
+     "offset": 3585.0
+    },
+    {
+     "name": "根本拓",
+     "group": "内閣府大臣政務官",
+     "clock": "12:50",
+     "minutes": "01",
+     "offset": 3620.3
+    },
+    {
+     "name": "坂本竜太郎",
+     "group": "内閣府大臣政務官兼復興大臣政務官",
+     "clock": "12:51",
+     "minutes": "01",
+     "offset": 3657.7
+    },
+    {
+     "name": "阿部弘樹",
+     "group": "法務大臣政務官兼内閣府大臣政務官",
+     "clock": "12:51",
+     "minutes": "01",
+     "offset": 3694.3
+    },
+    {
+     "name": "若山慎司",
+     "group": "経済産業大臣政務官兼内閣府大臣政務官",
+     "clock": "12:52",
+     "minutes": "01",
+     "offset": 3728.3
+    }
+   ]
+  },
+  {
+   "deli_id": "56458",
+   "name": "法務委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1021-1000-14/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "前原誠司",
+     "group": "法務委員長",
+     "clock": "10:00",
+     "minutes": "02",
+     "offset": 1199.4
+    },
+    {
+     "name": "山下貴司",
+     "group": "法務大臣 内閣府特命担当大臣（男女共同参画） 女性活躍担当 法制度検証・改革担当",
+     "clock": "10:02",
+     "minutes": "17",
+     "offset": 1341.7
+    },
+    {
+     "name": "武村展英",
+     "group": "法務副大臣兼内閣府副大臣",
+     "clock": "10:19",
+     "minutes": "01",
+     "offset": 2332.2
+    },
+    {
+     "name": "阿部弘樹",
+     "group": "法務大臣政務官兼内閣府大臣政務官",
+     "clock": "10:20",
+     "minutes": "01",
+     "offset": 2385.1
+    }
+   ]
+  },
+  {
+   "deli_id": "56457",
+   "name": "外務委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1021-1010-11/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "山田賢司",
+     "group": "外務委員長",
+     "clock": "10:10",
+     "minutes": "03",
+     "offset": 1186.4
+    },
+    {
+     "name": "茂木敏充",
+     "group": "外務大臣",
+     "clock": "10:13",
+     "minutes": "14",
+     "offset": 1340.8
+    },
+    {
+     "name": "堀井巌",
+     "group": "外務副大臣",
+     "clock": "10:27",
+     "minutes": "01",
+     "offset": 2222.3
+    },
+    {
+     "name": "中曽根康隆",
+     "group": "外務副大臣",
+     "clock": "10:28",
+     "minutes": "01",
+     "offset": 2268.1
+    },
+    {
+     "name": "生稲晃子",
+     "group": "外務大臣政務官",
+     "clock": "10:28",
+     "minutes": "01",
+     "offset": 2304.9
+    },
+    {
+     "name": "藤井一博",
+     "group": "外務大臣政務官",
+     "clock": "10:29",
+     "minutes": "01",
+     "offset": 2347.2
+    },
+    {
+     "name": "大空幸星",
+     "group": "外務大臣政務官",
+     "clock": "10:30",
+     "minutes": "01",
+     "offset": 2376.6
+    }
+   ]
+  },
+  {
+   "deli_id": "56459",
+   "name": "財務金融委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1021-0900-15/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "根本幸典",
+     "group": "財務金融委員長",
+     "clock": "9:00",
+     "minutes": "01",
+     "offset": 1188.9
+    },
+    {
+     "name": "三反園訓",
+     "group": "自由民主党・無所属の会",
+     "clock": "9:01",
+     "minutes": "25",
+     "offset": 1235.7
+    },
+    {
+     "name": "中川貴元",
+     "group": "自由民主党・無所属の会",
+     "clock": "9:26",
+     "minutes": "16",
+     "offset": 2771.0
+    },
+    {
+     "name": "岡本三成",
+     "group": "中道",
+     "clock": "9:42",
+     "minutes": "40",
+     "offset": 3746.6
+    },
+    {
+     "name": "伊佐進一",
+     "group": "中道",
+     "clock": "10:22",
+     "minutes": "38",
+     "offset": 6132.0
+    },
+    {
+     "name": "池下卓",
+     "group": "日本維新の会",
+     "clock": "11:00",
+     "minutes": "20",
+     "offset": 8399.1
+    },
+    {
+     "name": "田中健",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "11:20",
+     "minutes": "23",
+     "offset": 9618.4
+    },
+    {
+     "name": "近藤雅彦",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "11:43",
+     "minutes": "25",
+     "offset": 10988.6
+    },
+    {
+     "name": "根本幸典",
+     "group": "財務金融委員長",
+     "clock": "13:00",
+     "minutes": "01",
+     "offset": 15588.1
+    },
+    {
+     "name": "牧野俊一",
+     "group": "参政党",
+     "clock": "13:00",
+     "minutes": "29",
+     "offset": 15594.3
+    },
+    {
+     "name": "峰島侑也",
+     "group": "チームみらい",
+     "clock": "13:29",
+     "minutes": "21",
+     "offset": 17336.1
+    },
+    {
+     "name": "河村たかし",
+     "group": "無所属",
+     "clock": "13:50",
+     "minutes": "14",
+     "offset": 18628.3
+    },
+    {
+     "name": "片山さつき",
+     "group": "財務大臣 内閣府特命担当大臣（金融） 租税特別措置・補助金見直し担当 消費税・支援金法案担当",
+     "clock": "14:04",
+     "minutes": "04",
+     "offset": 19424.4
+    }
+   ]
+  },
+  {
+   "deli_id": "56460",
+   "name": "厚生労働委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1021-1210-16/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "瀬戸隆一",
+     "group": "厚生労働委員長",
+     "clock": "12:10",
+     "minutes": "03",
+     "offset": 1196.4
+    },
+    {
+     "name": "上野賢一郎",
+     "group": "厚生労働大臣",
+     "clock": "12:13",
+     "minutes": "20",
+     "offset": 1364.4
+    },
+    {
+     "name": "浦野靖人",
+     "group": "厚生労働副大臣",
+     "clock": "12:33",
+     "minutes": "01",
+     "offset": 2577.5
+    },
+    {
+     "name": "藤原崇",
+     "group": "厚生労働副大臣",
+     "clock": "12:33",
+     "minutes": "01",
+     "offset": 2607.0
+    },
+    {
+     "name": "長谷川英晴",
+     "group": "厚生労働大臣政務官",
+     "clock": "12:34",
+     "minutes": "01",
+     "offset": 2632.6
+    },
+    {
+     "name": "田中昌史",
+     "group": "厚生労働大臣政務官",
+     "clock": "12:34",
+     "minutes": "01",
+     "offset": 2663.4
+    }
+   ]
+  },
+  {
+   "deli_id": "56461",
+   "name": "農林水産委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1021-0930-17/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "今枝宗一郎",
+     "group": "農林水産委員長",
+     "clock": "9:30",
+     "minutes": "03",
+     "offset": 1193.3
+    },
+    {
+     "name": "武部新",
+     "group": "農林水産大臣",
+     "clock": "9:33",
+     "minutes": "15",
+     "offset": 1382.6
+    },
+    {
+     "name": "小寺裕雄",
+     "group": "農林水産副大臣",
+     "clock": "9:48",
+     "minutes": "01",
+     "offset": 2317.9
+    },
+    {
+     "name": "藤木眞也",
+     "group": "農林水産副大臣",
+     "clock": "9:49",
+     "minutes": "01",
+     "offset": 2358.1
+    },
+    {
+     "name": "保岡宏武",
+     "group": "農林水産大臣政務官",
+     "clock": "9:50",
+     "minutes": "01",
+     "offset": 2398.9
+    },
+    {
+     "name": "森下千里",
+     "group": "農林水産大臣政務官",
+     "clock": "9:51",
+     "minutes": "01",
+     "offset": 2449.5
+    }
+   ]
+  },
+  {
+   "deli_id": "56455",
+   "name": "経済産業委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1021-1100-12/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "岩田和親",
+     "group": "経済産業委員長",
+     "clock": "11:00",
+     "minutes": "02",
+     "offset": 1196.4
+    },
+    {
+     "name": "赤澤亮正",
+     "group": "経済産業大臣 原子力経済被害担当 ＧＸ実行推進担当 産業競争力担当 中東情勢に伴う重要物資安定確保担当 ＡＸ社会実装担当 内閣府特命担当大臣（原子力損害賠償・廃炉等支援機構）",
+     "clock": "11:02",
+     "minutes": "16",
+     "offset": 1352.4
+    },
+    {
+     "name": "葉梨康弘",
+     "group": "国家公安委員会委員長 領土問題担当 ＣＢＲＮＥテロ対策担当 内閣府特命担当大臣（沖縄及び北方対策 消費者及び食品安全 アイヌ施策）",
+     "clock": "11:18",
+     "minutes": "02",
+     "offset": 2264.2
+    },
+    {
+     "name": "宮本周司",
+     "group": "経済産業副大臣兼内閣府副大臣",
+     "clock": "11:20",
+     "minutes": "01",
+     "offset": 2419.4
+    },
+    {
+     "name": "高木啓",
+     "group": "経済産業副大臣",
+     "clock": "11:21",
+     "minutes": "01",
+     "offset": 2468.2
+    },
+    {
+     "name": "今井絵理子",
+     "group": "内閣府副大臣",
+     "clock": "11:22",
+     "minutes": "01",
+     "offset": 2506.1
+    },
+    {
+     "name": "石井苗子",
+     "group": "経済産業大臣政務官",
+     "clock": "11:22",
+     "minutes": "01",
+     "offset": 2556.1
+    },
+    {
+     "name": "若山慎司",
+     "group": "経済産業大臣政務官兼内閣府大臣政務官",
+     "clock": "11:23",
+     "minutes": "01",
+     "offset": 2592.4
+    },
+    {
+     "name": "坂本竜太郎",
+     "group": "内閣府大臣政務官兼復興大臣政務官",
+     "clock": "11:24",
+     "minutes": "01",
+     "offset": 2629.3
+    }
+   ]
+  },
+  {
+   "deli_id": "56456",
+   "name": "国土交通委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1021-1000-18/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "武井俊輔",
+     "group": "国土交通委員長",
+     "clock": "10:00",
+     "minutes": "04",
+     "offset": 1192.3
+    },
+    {
+     "name": "井林辰憲",
+     "group": "国土交通大臣 水循環政策担当 国際園芸博覧会担当",
+     "clock": "10:04",
+     "minutes": "28",
+     "offset": 1449.8
+    },
+    {
+     "name": "加藤鮎子",
+     "group": "国土交通副大臣",
+     "clock": "10:32",
+     "minutes": "01",
+     "offset": 3110.5
+    },
+    {
+     "name": "朝日健太郎",
+     "group": "国土交通副大臣",
+     "clock": "10:32",
+     "minutes": "01",
+     "offset": 3126.1
+    },
+    {
+     "name": "青島健太",
+     "group": "国土交通大臣政務官",
+     "clock": "10:32",
+     "minutes": "01",
+     "offset": 3138.4
+    },
+    {
+     "name": "草間剛",
+     "group": "国土交通大臣政務官",
+     "clock": "10:33",
+     "minutes": "01",
+     "offset": 3174.8
+    },
+    {
+     "name": "高橋祐介",
+     "group": "国土交通大臣政務官",
+     "clock": "10:33",
+     "minutes": "01",
+     "offset": 3200.3
+    }
+   ]
+  }
+ ]
+}

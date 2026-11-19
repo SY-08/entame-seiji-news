@@ -1,0 +1,139 @@
+{
+ "date": "2026-10-20",
+ "house": "衆議院",
+ "meetings": [
+  {
+   "deli_id": "56452",
+   "name": "本会議",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1020-1300-00/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "森英介",
+     "group": "衆議院議長",
+     "clock": "13:02",
+     "minutes": "01",
+     "offset": 1319.0
+    },
+    {
+     "name": "片山さつき",
+     "group": "財務大臣 内閣府特命担当大臣（金融） 租税特別措置・補助金見直し担当 消費税・支援金法案担当",
+     "clock": "13:02",
+     "minutes": "04",
+     "offset": 1337.9
+    },
+    {
+     "name": "小林茂樹",
+     "group": "自由民主党・無所属の会",
+     "clock": "13:06",
+     "minutes": "18",
+     "offset": 1560.6
+    },
+    {
+     "name": "重徳和彦",
+     "group": "中道",
+     "clock": "13:24",
+     "minutes": "35",
+     "offset": 2626.0
+    },
+    {
+     "name": "萩原佳",
+     "group": "日本維新の会",
+     "clock": "13:59",
+     "minutes": "20",
+     "offset": 4747.1
+    },
+    {
+     "name": "石井啓一",
+     "group": "衆議院副議長",
+     "clock": "14:19",
+     "minutes": "01",
+     "offset": 5951.2
+    },
+    {
+     "name": "浅野哲",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "14:19",
+     "minutes": "36",
+     "offset": 5959.5
+    },
+    {
+     "name": "牧野俊一",
+     "group": "参政党",
+     "clock": "14:55",
+     "minutes": "14",
+     "offset": 8071.6
+    },
+    {
+     "name": "林拓海",
+     "group": "チームみらい",
+     "clock": "15:09",
+     "minutes": "10",
+     "offset": 8951.3
+    }
+   ]
+  },
+  {
+   "deli_id": "56453",
+   "name": "財務金融委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1020-1100-15/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "根本幸典",
+     "group": "財務金融委員長",
+     "clock": "11:00",
+     "minutes": "03",
+     "offset": 1204.6
+    },
+    {
+     "name": "片山さつき",
+     "group": "財務大臣 内閣府特命担当大臣（金融） 租税特別措置・補助金見直し担当 消費税・支援金法案担当",
+     "clock": "11:03",
+     "minutes": "09",
+     "offset": 1385.4
+    },
+    {
+     "name": "若林健太",
+     "group": "財務副大臣兼内閣府副大臣",
+     "clock": "11:12",
+     "minutes": "01",
+     "offset": 1903.5
+    },
+    {
+     "name": "進藤金日子",
+     "group": "財務副大臣",
+     "clock": "11:12",
+     "minutes": "01",
+     "offset": 1941.6
+    },
+    {
+     "name": "谷川とむ",
+     "group": "内閣府副大臣",
+     "clock": "11:13",
+     "minutes": "01",
+     "offset": 1984.2
+    },
+    {
+     "name": "山口晋",
+     "group": "財務大臣政務官兼内閣府大臣政務官",
+     "clock": "11:13",
+     "minutes": "01",
+     "offset": 2019.4
+    },
+    {
+     "name": "白坂亜紀",
+     "group": "財務大臣政務官",
+     "clock": "11:14",
+     "minutes": "01",
+     "offset": 2056.1
+    },
+    {
+     "name": "根本拓",
+     "group": "内閣府大臣政務官",
+     "clock": "11:15",
+     "minutes": "01",
+     "offset": 2102.3
+    }
+   ]
+  }
+ ]
+}

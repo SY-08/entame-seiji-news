@@ -1,0 +1,314 @@
+{
+ "date": "2026-11-05",
+ "house": "衆議院",
+ "meetings": [
+  {
+   "deli_id": "56508",
+   "name": "内閣委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1105-0900-17/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "井出庸生",
+     "group": "内閣委員長",
+     "clock": "9:00",
+     "minutes": "01",
+     "offset": 1195.7
+    },
+    {
+     "name": "成瀬剛",
+     "group": "参考人 東京大学大学院法学政治学研究科教授",
+     "clock": "9:01",
+     "minutes": "10",
+     "offset": 1296.3
+    },
+    {
+     "name": "尾崎愛美",
+     "group": "参考人 筑波大学ビジネスサイエンス系准教授",
+     "clock": "9:11",
+     "minutes": "11",
+     "offset": 1867.0
+    },
+    {
+     "name": "野口貴公美",
+     "group": "参考人 一橋大学大学院法学研究科教授",
+     "clock": "9:22",
+     "minutes": "10",
+     "offset": 2509.9
+    },
+    {
+     "name": "小西葉子",
+     "group": "参考人 関西学院大学総合政策学部准教授",
+     "clock": "9:32",
+     "minutes": "11",
+     "offset": 3145.5
+    },
+    {
+     "name": "大岡敏孝",
+     "group": "自由民主党・無所属の会",
+     "clock": "9:43",
+     "minutes": "15",
+     "offset": 3805.1
+    },
+    {
+     "name": "山崎正恭",
+     "group": "中道",
+     "clock": "9:58",
+     "minutes": "16",
+     "offset": 4719.9
+    },
+    {
+     "name": "市村浩一郎",
+     "group": "日本維新の会",
+     "clock": "10:14",
+     "minutes": "16",
+     "offset": 5636.7
+    },
+    {
+     "name": "野村美穂",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "10:30",
+     "minutes": "17",
+     "offset": 6589.1
+    },
+    {
+     "name": "川裕一郎",
+     "group": "参政党",
+     "clock": "10:47",
+     "minutes": "16",
+     "offset": 7660.3
+    },
+    {
+     "name": "高山聡史",
+     "group": "チームみらい",
+     "clock": "11:03",
+     "minutes": "17",
+     "offset": 8619.9
+    },
+    {
+     "name": "辰巳孝太郎",
+     "group": "日本共産党",
+     "clock": "11:20",
+     "minutes": "18",
+     "offset": 9645.4
+    },
+    {
+     "name": "井出庸生",
+     "group": "内閣委員長",
+     "clock": "13:30",
+     "minutes": "01",
+     "offset": 17396.8
+    },
+    {
+     "name": "長田紘一郎",
+     "group": "自由民主党・無所属の会",
+     "clock": "13:30",
+     "minutes": "15",
+     "offset": 17429.6
+    },
+    {
+     "name": "早稲田ゆき",
+     "group": "中道",
+     "clock": "13:45",
+     "minutes": "35",
+     "offset": 18331.9
+    },
+    {
+     "name": "長妻昭",
+     "group": "中道",
+     "clock": "14:20",
+     "minutes": "31",
+     "offset": 20406.2
+    },
+    {
+     "name": "西田薫",
+     "group": "日本維新の会",
+     "clock": "14:51",
+     "minutes": "16",
+     "offset": 22254.5
+    },
+    {
+     "name": "河井昭成",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "15:07",
+     "minutes": "47",
+     "offset": 23217.8
+    },
+    {
+     "name": "川裕一郎",
+     "group": "参政党",
+     "clock": "15:54",
+     "minutes": "25",
+     "offset": 26078.9
+    },
+    {
+     "name": "峰島侑也",
+     "group": "チームみらい",
+     "clock": "16:19",
+     "minutes": "18",
+     "offset": 27566.6
+    },
+    {
+     "name": "辰巳孝太郎",
+     "group": "日本共産党",
+     "clock": "16:37",
+     "minutes": "12",
+     "offset": 28623.4
+    },
+    {
+     "name": "中村はやと",
+     "group": "無所属",
+     "clock": "16:49",
+     "minutes": "16",
+     "offset": 29335.7
+    }
+   ]
+  },
+  {
+   "deli_id": "56507",
+   "name": "災害対策特別委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1105-0930-12/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "御法川信英",
+     "group": "災害対策特別委員長",
+     "clock": "9:30",
+     "minutes": "01",
+     "offset": 1196.1
+    },
+    {
+     "name": "細野豪志",
+     "group": "防災大臣 復興大臣 福島原子力発電所事故再生総括担当 国土強靱化担当 国際防災協力担当",
+     "clock": "9:30",
+     "minutes": "08",
+     "offset": 1197.7
+    },
+    {
+     "name": "金子道仁",
+     "group": "防災副大臣兼内閣府副大臣",
+     "clock": "9:38",
+     "minutes": "01",
+     "offset": 1708.3
+    },
+    {
+     "name": "大西洋平",
+     "group": "防災大臣政務官兼内閣府大臣政務官",
+     "clock": "9:39",
+     "minutes": "01",
+     "offset": 1751.9
+    }
+   ]
+  },
+  {
+   "deli_id": "56509",
+   "name": "憲法審査会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1105-1000-18/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "古屋圭司",
+     "group": "憲法審査会会長",
+     "clock": "10:00",
+     "minutes": "01",
+     "offset": 1244.0
+    },
+    {
+     "name": "新藤義孝",
+     "group": "自由民主党・無所属の会",
+     "clock": "10:01",
+     "minutes": "08",
+     "offset": 1305.2
+    },
+    {
+     "name": "國重徹",
+     "group": "中道",
+     "clock": "10:09",
+     "minutes": "07",
+     "offset": 1759.3
+    },
+    {
+     "name": "阿部圭史",
+     "group": "日本維新の会",
+     "clock": "10:16",
+     "minutes": "07",
+     "offset": 2173.6
+    },
+    {
+     "name": "玉木雄一郎",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "10:23",
+     "minutes": "06",
+     "offset": 2607.0
+    },
+    {
+     "name": "和田政宗",
+     "group": "参政党",
+     "clock": "10:29",
+     "minutes": "07",
+     "offset": 2950.9
+    },
+    {
+     "name": "古川あおい",
+     "group": "チームみらい",
+     "clock": "10:36",
+     "minutes": "07",
+     "offset": 3371.7
+    },
+    {
+     "name": "畑野君枝",
+     "group": "日本共産党",
+     "clock": "10:43",
+     "minutes": "06",
+     "offset": 3794.1
+    },
+    {
+     "name": "古屋圭司",
+     "group": "憲法審査会会長",
+     "clock": "10:49",
+     "minutes": "01",
+     "offset": 4184.6
+    },
+    {
+     "name": "鬼木誠",
+     "group": "自由民主党・無所属の会",
+     "clock": "10:50",
+     "minutes": "06",
+     "offset": 4238.9
+    },
+    {
+     "name": "階猛",
+     "group": "中道",
+     "clock": "10:56",
+     "minutes": "05",
+     "offset": 4557.4
+    },
+    {
+     "name": "池畑浩太朗",
+     "group": "日本維新の会",
+     "clock": "11:01",
+     "minutes": "04",
+     "offset": 4867.9
+    },
+    {
+     "name": "飯泉嘉門",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "11:05",
+     "minutes": "05",
+     "offset": 5141.5
+    },
+    {
+     "name": "北神圭朗",
+     "group": "自由民主党・無所属の会",
+     "clock": "11:10",
+     "minutes": "05",
+     "offset": 5420.4
+    },
+    {
+     "name": "和田義明",
+     "group": "自由民主党・無所属の会",
+     "clock": "11:15",
+     "minutes": "05",
+     "offset": 5714.7
+    }
+   ]
+  }
+ ]
+}

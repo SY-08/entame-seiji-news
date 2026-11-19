@@ -1,0 +1,531 @@
+{
+ "date": "2026-11-06",
+ "house": "衆議院",
+ "meetings": [
+  {
+   "deli_id": "56510",
+   "name": "本会議",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1106-1300-00/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "森英介",
+     "group": "衆議院議長",
+     "clock": "13:02",
+     "minutes": "01",
+     "offset": 1314.7
+    },
+    {
+     "name": "菅家一郎",
+     "group": "環境委員長",
+     "clock": "13:02",
+     "minutes": "03",
+     "offset": 1325.5
+    },
+    {
+     "name": "鈴木憲和",
+     "group": "文部科学委員長",
+     "clock": "13:05",
+     "minutes": "02",
+     "offset": 1474.4
+    },
+    {
+     "name": "瀬戸隆一",
+     "group": "厚生労働委員長",
+     "clock": "13:07",
+     "minutes": "02",
+     "offset": 1613.1
+    },
+    {
+     "name": "山田賢司",
+     "group": "外務委員長",
+     "clock": "13:09",
+     "minutes": "04",
+     "offset": 1744.2
+    },
+    {
+     "name": "根本幸典",
+     "group": "財務金融委員長",
+     "clock": "13:13",
+     "minutes": "04",
+     "offset": 1951.8
+    },
+    {
+     "name": "伊佐進一",
+     "group": "中道",
+     "clock": "13:17",
+     "minutes": "10",
+     "offset": 2228.6
+    },
+    {
+     "name": "田中健",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "13:27",
+     "minutes": "11",
+     "offset": 2838.2
+    },
+    {
+     "name": "牧野俊一",
+     "group": "参政党",
+     "clock": "13:38",
+     "minutes": "05",
+     "offset": 3475.7
+    },
+    {
+     "name": "峰島侑也",
+     "group": "チームみらい",
+     "clock": "13:43",
+     "minutes": "07",
+     "offset": 3806.1
+    }
+   ]
+  },
+  {
+   "deli_id": "56515",
+   "name": "内閣委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1106-0900-17/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "井出庸生",
+     "group": "内閣委員長",
+     "clock": "9:00",
+     "minutes": "01",
+     "offset": 1183.5
+    },
+    {
+     "name": "原田直樹",
+     "group": "中道",
+     "clock": "9:00",
+     "minutes": "51",
+     "offset": 1214.4
+    },
+    {
+     "name": "犬飼明佳",
+     "group": "中道",
+     "clock": "9:51",
+     "minutes": "50",
+     "offset": 4238.4
+    },
+    {
+     "name": "山崎正恭",
+     "group": "中道",
+     "clock": "10:41",
+     "minutes": "50",
+     "offset": 7287.7
+    },
+    {
+     "name": "野村美穂",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "11:31",
+     "minutes": "47",
+     "offset": 10251.7
+    },
+    {
+     "name": "井出庸生",
+     "group": "内閣委員長",
+     "clock": "13:58",
+     "minutes": "01",
+     "offset": 19070.7
+    },
+    {
+     "name": "森ようすけ",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "13:58",
+     "minutes": "52",
+     "offset": 19076.0
+    },
+    {
+     "name": "川裕一郎",
+     "group": "参政党",
+     "clock": "14:50",
+     "minutes": "54",
+     "offset": 22211.9
+    },
+    {
+     "name": "高山聡史",
+     "group": "チームみらい",
+     "clock": "15:44",
+     "minutes": "39",
+     "offset": 25444.7
+    },
+    {
+     "name": "辰巳孝太郎",
+     "group": "日本共産党",
+     "clock": "16:23",
+     "minutes": "30",
+     "offset": 27784.1
+    },
+    {
+     "name": "山崎正恭",
+     "group": "中道",
+     "clock": "16:53",
+     "minutes": "03",
+     "offset": 29608.5
+    },
+    {
+     "name": "高山聡史",
+     "group": "チームみらい",
+     "clock": "16:56",
+     "minutes": "02",
+     "offset": 29756.0
+    },
+    {
+     "name": "辰巳孝太郎",
+     "group": "日本共産党",
+     "clock": "16:58",
+     "minutes": "04",
+     "offset": 29911.2
+    },
+    {
+     "name": "山崎正恭",
+     "group": "中道",
+     "clock": "17:02",
+     "minutes": "05",
+     "offset": 30111.5
+    }
+   ]
+  },
+  {
+   "deli_id": "56513",
+   "name": "法務委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1106-0900-14/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "前原誠司",
+     "group": "法務委員長",
+     "clock": "9:00",
+     "minutes": "01",
+     "offset": 1192.2
+    },
+    {
+     "name": "辻由布子",
+     "group": "自由民主党・無所属の会",
+     "clock": "9:00",
+     "minutes": "25",
+     "offset": 1234.4
+    },
+    {
+     "name": "西村智奈美",
+     "group": "中道",
+     "clock": "9:25",
+     "minutes": "48",
+     "offset": 2689.2
+    },
+    {
+     "name": "有田芳生",
+     "group": "中道",
+     "clock": "10:13",
+     "minutes": "23",
+     "offset": 5613.9
+    },
+    {
+     "name": "柏倉祐司",
+     "group": "日本維新の会",
+     "clock": "10:36",
+     "minutes": "21",
+     "offset": 6961.8
+    },
+    {
+     "name": "小竹凱",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "10:57",
+     "minutes": "24",
+     "offset": 8202.9
+    },
+    {
+     "name": "井戸まさえ",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "11:21",
+     "minutes": "16",
+     "offset": 9659.5
+    },
+    {
+     "name": "和田政宗",
+     "group": "参政党",
+     "clock": "11:37",
+     "minutes": "27",
+     "offset": 10623.4
+    }
+   ]
+  },
+  {
+   "deli_id": "56511",
+   "name": "財務金融委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1106-0900-01/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "根本幸典",
+     "group": "財務金融委員長",
+     "clock": "9:00",
+     "minutes": "01",
+     "offset": 1193.9
+    },
+    {
+     "name": "岡本三成",
+     "group": "中道",
+     "clock": "9:01",
+     "minutes": "26",
+     "offset": 1244.2
+    },
+    {
+     "name": "田中健",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "9:27",
+     "minutes": "17",
+     "offset": 2834.3
+    },
+    {
+     "name": "牧野俊一",
+     "group": "参政党",
+     "clock": "9:44",
+     "minutes": "09",
+     "offset": 3838.2
+    },
+    {
+     "name": "峰島侑也",
+     "group": "チームみらい",
+     "clock": "9:53",
+     "minutes": "07",
+     "offset": 4410.0
+    },
+    {
+     "name": "河村たかし",
+     "group": "無所属",
+     "clock": "10:00",
+     "minutes": "03",
+     "offset": 4807.7
+    },
+    {
+     "name": "北神圭朗",
+     "group": "自由民主党・無所属の会",
+     "clock": "10:03",
+     "minutes": "07",
+     "offset": 4991.8
+    },
+    {
+     "name": "重徳和彦",
+     "group": "中道",
+     "clock": "10:10",
+     "minutes": "22",
+     "offset": 5413.4
+    },
+    {
+     "name": "近藤雅彦",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "10:32",
+     "minutes": "13",
+     "offset": 6764.8
+    },
+    {
+     "name": "牧野俊一",
+     "group": "参政党",
+     "clock": "10:45",
+     "minutes": "08",
+     "offset": 7524.5
+    },
+    {
+     "name": "峰島侑也",
+     "group": "チームみらい",
+     "clock": "10:53",
+     "minutes": "05",
+     "offset": 7960.8
+    },
+    {
+     "name": "河村たかし",
+     "group": "無所属",
+     "clock": "10:58",
+     "minutes": "04",
+     "offset": 8264.0
+    },
+    {
+     "name": "根本幸典",
+     "group": "財務金融委員長",
+     "clock": "11:14",
+     "minutes": "01",
+     "offset": 9270.4
+    },
+    {
+     "name": "大森江里子",
+     "group": "中道",
+     "clock": "11:15",
+     "minutes": "03",
+     "offset": 9308.8
+    },
+    {
+     "name": "田中健",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "11:18",
+     "minutes": "03",
+     "offset": 9511.3
+    },
+    {
+     "name": "牧野俊一",
+     "group": "参政党",
+     "clock": "11:21",
+     "minutes": "03",
+     "offset": 9689.5
+    },
+    {
+     "name": "峰島侑也",
+     "group": "チームみらい",
+     "clock": "11:24",
+     "minutes": "05",
+     "offset": 9864.5
+    }
+   ]
+  },
+  {
+   "deli_id": "56512",
+   "name": "経済産業委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1106-0900-12/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "岩田和親",
+     "group": "経済産業委員長",
+     "clock": "9:00",
+     "minutes": "01",
+     "offset": 1193.7
+    },
+    {
+     "name": "山岡達丸",
+     "group": "中道",
+     "clock": "9:01",
+     "minutes": "32",
+     "offset": 1299.2
+    },
+    {
+     "name": "河野義博",
+     "group": "中道",
+     "clock": "9:33",
+     "minutes": "28",
+     "offset": 3168.1
+    },
+    {
+     "name": "吉田宣弘",
+     "group": "中道",
+     "clock": "10:01",
+     "minutes": "32",
+     "offset": 4860.4
+    },
+    {
+     "name": "落合貴之",
+     "group": "中道",
+     "clock": "10:33",
+     "minutes": "32",
+     "offset": 6812.9
+    },
+    {
+     "name": "丹野みどり",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "11:05",
+     "minutes": "35",
+     "offset": 8705.5
+    },
+    {
+     "name": "鈴木義弘",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "11:40",
+     "minutes": "21",
+     "offset": 10824.4
+    },
+    {
+     "name": "岩田和親",
+     "group": "経済産業委員長",
+     "clock": "13:57",
+     "minutes": "01",
+     "offset": 19036.8
+    },
+    {
+     "name": "鈴木義弘",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "13:57",
+     "minutes": "22",
+     "offset": 19041.2
+    },
+    {
+     "name": "牧野俊一",
+     "group": "参政党",
+     "clock": "14:19",
+     "minutes": "41",
+     "offset": 20363.1
+    },
+    {
+     "name": "小林修平",
+     "group": "チームみらい",
+     "clock": "15:00",
+     "minutes": "32",
+     "offset": 22841.7
+    },
+    {
+     "name": "山岡達丸",
+     "group": "中道",
+     "clock": "15:32",
+     "minutes": "06",
+     "offset": 24760.9
+    }
+   ]
+  },
+  {
+   "deli_id": "56514",
+   "name": "地域・こども・デジタル特別委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1106-0900-16/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "田中良生",
+     "group": "地域・こども・デジタル特別委員長",
+     "clock": "9:00",
+     "minutes": "01",
+     "offset": 1187.5
+    },
+    {
+     "name": "山本左近",
+     "group": "自由民主党・無所属の会",
+     "clock": "9:00",
+     "minutes": "12",
+     "offset": 1232.8
+    },
+    {
+     "name": "武藤かず子",
+     "group": "チームみらい",
+     "clock": "9:12",
+     "minutes": "17",
+     "offset": 1908.9
+    },
+    {
+     "name": "大森江里子",
+     "group": "中道",
+     "clock": "9:29",
+     "minutes": "41",
+     "offset": 2962.7
+    },
+    {
+     "name": "早稲田ゆき",
+     "group": "中道",
+     "clock": "10:10",
+     "minutes": "31",
+     "offset": 5377.2
+    },
+    {
+     "name": "喜多義典",
+     "group": "日本維新の会",
+     "clock": "10:41",
+     "minutes": "11",
+     "offset": 7285.4
+    },
+    {
+     "name": "日野紗里亜",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "10:52",
+     "minutes": "44",
+     "offset": 7899.6
+    },
+    {
+     "name": "谷浩一郎",
+     "group": "参政党",
+     "clock": "11:36",
+     "minutes": "24",
+     "offset": 10595.2
+    }
+   ]
+  }
+ ]
+}

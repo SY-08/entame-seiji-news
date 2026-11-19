@@ -1,0 +1,468 @@
+{
+ "date": "2026-10-27",
+ "house": "衆議院",
+ "meetings": [
+  {
+   "deli_id": "56475",
+   "name": "本会議",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1027-1300-00/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "森英介",
+     "group": "衆議院議長",
+     "clock": "13:02",
+     "minutes": "01",
+     "offset": 1319.5
+    },
+    {
+     "name": "堀内詔子",
+     "group": "自由民主党・無所属の会",
+     "clock": "13:03",
+     "minutes": "24",
+     "offset": 1378.1
+    }
+   ]
+  },
+  {
+   "deli_id": "56478",
+   "name": "総務委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1027-0900-14/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "田所嘉徳",
+     "group": "総務委員長",
+     "clock": "9:00",
+     "minutes": "01",
+     "offset": 1190.5
+    },
+    {
+     "name": "橘慶一郎",
+     "group": "自由民主党・無所属の会",
+     "clock": "9:01",
+     "minutes": "15",
+     "offset": 1247.2
+    },
+    {
+     "name": "田嶋要",
+     "group": "中道",
+     "clock": "9:16",
+     "minutes": "36",
+     "offset": 2160.7
+    },
+    {
+     "name": "平林晃",
+     "group": "中道",
+     "clock": "9:52",
+     "minutes": "34",
+     "offset": 4307.9
+    },
+    {
+     "name": "岩谷良平",
+     "group": "日本維新の会",
+     "clock": "10:26",
+     "minutes": "16",
+     "offset": 6385.5
+    },
+    {
+     "name": "高沢一基",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "10:42",
+     "minutes": "16",
+     "offset": 7349.7
+    },
+    {
+     "name": "許斐亮太郎",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "10:58",
+     "minutes": "24",
+     "offset": 8309.7
+    },
+    {
+     "name": "青木ひとみ",
+     "group": "参政党",
+     "clock": "11:22",
+     "minutes": "21",
+     "offset": 9734.0
+    },
+    {
+     "name": "山田瑛理",
+     "group": "チームみらい",
+     "clock": "11:43",
+     "minutes": "19",
+     "offset": 10963.7
+    },
+    {
+     "name": "藤井比早之",
+     "group": "総務大臣 内閣府特命担当大臣（地方創生） 地域未来戦略担当 副首都整備等推進担当",
+     "clock": "12:02",
+     "minutes": "03",
+     "offset": 12132.4
+    }
+   ]
+  },
+  {
+   "deli_id": "56479",
+   "name": "財務金融委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1027-0900-15/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "根本幸典",
+     "group": "財務金融委員長",
+     "clock": "9:00",
+     "minutes": "01",
+     "offset": 1227.7
+    },
+    {
+     "name": "松本泉",
+     "group": "自由民主党・無所属の会",
+     "clock": "9:01",
+     "minutes": "18",
+     "offset": 1275.8
+    },
+    {
+     "name": "近藤和也",
+     "group": "中道",
+     "clock": "9:19",
+     "minutes": "35",
+     "offset": 2354.4
+    },
+    {
+     "name": "山岡達丸",
+     "group": "中道",
+     "clock": "9:54",
+     "minutes": "34",
+     "offset": 4426.4
+    },
+    {
+     "name": "萩原佳",
+     "group": "日本維新の会",
+     "clock": "10:28",
+     "minutes": "17",
+     "offset": 6479.2
+    },
+    {
+     "name": "近藤雅彦",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "10:45",
+     "minutes": "42",
+     "offset": 7503.8
+    },
+    {
+     "name": "牧野俊一",
+     "group": "参政党",
+     "clock": "11:27",
+     "minutes": "21",
+     "offset": 10012.2
+    },
+    {
+     "name": "峰島侑也",
+     "group": "チームみらい",
+     "clock": "11:48",
+     "minutes": "17",
+     "offset": 11315.5
+    },
+    {
+     "name": "河村たかし",
+     "group": "無所属",
+     "clock": "12:05",
+     "minutes": "08",
+     "offset": 12283.2
+    },
+    {
+     "name": "根本幸典",
+     "group": "財務金融委員長",
+     "clock": "13:40",
+     "minutes": "02",
+     "offset": 17986.9
+    },
+    {
+     "name": "武田洋子",
+     "group": "参考人 株式会社三菱総合研究所常務研究理事",
+     "clock": "13:42",
+     "minutes": "15",
+     "offset": 18106.0
+    },
+    {
+     "name": "是枝俊悟",
+     "group": "参考人 株式会社大和総研金融調査部主任研究員",
+     "clock": "13:57",
+     "minutes": "14",
+     "offset": 19022.6
+    },
+    {
+     "name": "渡辺努",
+     "group": "参考人 東京大学名誉教授",
+     "clock": "14:11",
+     "minutes": "17",
+     "offset": 19882.1
+    },
+    {
+     "name": "秋葉弘道",
+     "group": "参考人 株式会社アキダイ代表取締役",
+     "clock": "14:28",
+     "minutes": "18",
+     "offset": 20865.7
+    },
+    {
+     "name": "渡辺勝幸",
+     "group": "自由民主党・無所属の会",
+     "clock": "14:46",
+     "minutes": "19",
+     "offset": 21945.6
+    },
+    {
+     "name": "伊佐進一",
+     "group": "中道",
+     "clock": "15:05",
+     "minutes": "21",
+     "offset": 23077.8
+    },
+    {
+     "name": "池下卓",
+     "group": "日本維新の会",
+     "clock": "15:26",
+     "minutes": "19",
+     "offset": 24335.6
+    },
+    {
+     "name": "田中健",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "15:45",
+     "minutes": "24",
+     "offset": 25497.1
+    },
+    {
+     "name": "牧野俊一",
+     "group": "参政党",
+     "clock": "16:09",
+     "minutes": "24",
+     "offset": 26919.0
+    },
+    {
+     "name": "峰島侑也",
+     "group": "チームみらい",
+     "clock": "16:33",
+     "minutes": "23",
+     "offset": 28369.4
+    }
+   ]
+  },
+  {
+   "deli_id": "56480",
+   "name": "農林水産委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1027-0900-17/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "今枝宗一郎",
+     "group": "農林水産委員長",
+     "clock": "9:00",
+     "minutes": "01",
+     "offset": 1184.0
+    },
+    {
+     "name": "宮路拓馬",
+     "group": "自由民主党・無所属の会",
+     "clock": "9:01",
+     "minutes": "21",
+     "offset": 1238.2
+    },
+    {
+     "name": "中川こういち",
+     "group": "自由民主党・無所属の会",
+     "clock": "9:22",
+     "minutes": "20",
+     "offset": 2523.5
+    },
+    {
+     "name": "野間健",
+     "group": "中道",
+     "clock": "9:42",
+     "minutes": "26",
+     "offset": 3697.7
+    },
+    {
+     "name": "角田秀穂",
+     "group": "中道",
+     "clock": "10:08",
+     "minutes": "24",
+     "offset": 5269.9
+    },
+    {
+     "name": "庄子賢一",
+     "group": "中道",
+     "clock": "10:32",
+     "minutes": "26",
+     "offset": 6719.7
+    },
+    {
+     "name": "池畑浩太朗",
+     "group": "日本維新の会",
+     "clock": "10:58",
+     "minutes": "19",
+     "offset": 8255.8
+    },
+    {
+     "name": "村岡敏英",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "11:17",
+     "minutes": "20",
+     "offset": 9424.8
+    },
+    {
+     "name": "臼木秀剛",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "11:37",
+     "minutes": "26",
+     "offset": 10594.8
+    },
+    {
+     "name": "今枝宗一郎",
+     "group": "農林水産委員長",
+     "clock": "13:33",
+     "minutes": "01",
+     "offset": 17598.4
+    },
+    {
+     "name": "木下敏之",
+     "group": "参政党",
+     "clock": "13:33",
+     "minutes": "26",
+     "offset": 17603.7
+    },
+    {
+     "name": "林拓海",
+     "group": "チームみらい",
+     "clock": "13:59",
+     "minutes": "21",
+     "offset": 19168.6
+    }
+   ]
+  },
+  {
+   "deli_id": "56476",
+   "name": "環境委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1027-0900-11/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "菅家一郎",
+     "group": "環境委員長",
+     "clock": "9:00",
+     "minutes": "01",
+     "offset": 1196.3
+    },
+    {
+     "name": "青山繁晴",
+     "group": "自由民主党・無所属の会",
+     "clock": "9:00",
+     "minutes": "29",
+     "offset": 1240.0
+    },
+    {
+     "name": "佐藤英道",
+     "group": "中道",
+     "clock": "9:29",
+     "minutes": "26",
+     "offset": 2972.6
+    },
+    {
+     "name": "金子恵美",
+     "group": "中道",
+     "clock": "9:55",
+     "minutes": "25",
+     "offset": 4510.0
+    },
+    {
+     "name": "若狹清史",
+     "group": "日本維新の会",
+     "clock": "10:20",
+     "minutes": "32",
+     "offset": 6013.7
+    },
+    {
+     "name": "向山好一",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "10:52",
+     "minutes": "19",
+     "offset": 7950.5
+    },
+    {
+     "name": "鍋島勢理",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "11:11",
+     "minutes": "18",
+     "offset": 9094.3
+    },
+    {
+     "name": "島村かおる",
+     "group": "参政党",
+     "clock": "11:29",
+     "minutes": "20",
+     "offset": 10131.0
+    },
+    {
+     "name": "渡辺真太朗",
+     "group": "無所属",
+     "clock": "11:49",
+     "minutes": "16",
+     "offset": 11375.5
+    },
+    {
+     "name": "笹川博義",
+     "group": "環境大臣 内閣府特命担当大臣（原子力防災） クマ被害対策担当",
+     "clock": "12:05",
+     "minutes": "03",
+     "offset": 12325.2
+    }
+   ]
+  },
+  {
+   "deli_id": "56477",
+   "name": "安全保障委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1027-0900-13/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "辻清人",
+     "group": "安全保障委員長",
+     "clock": "9:00",
+     "minutes": "01",
+     "offset": 1194.5
+    },
+    {
+     "name": "吉田宣弘",
+     "group": "中道",
+     "clock": "9:00",
+     "minutes": "38",
+     "offset": 1232.1
+    },
+    {
+     "name": "橋本幹彦",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "9:38",
+     "minutes": "36",
+     "offset": 3521.7
+    },
+    {
+     "name": "谷浩一郎",
+     "group": "参政党",
+     "clock": "10:14",
+     "minutes": "25",
+     "offset": 5656.6
+    },
+    {
+     "name": "宇佐美登",
+     "group": "チームみらい",
+     "clock": "10:39",
+     "minutes": "25",
+     "offset": 7171.5
+    },
+    {
+     "name": "田村智子",
+     "group": "日本共産党",
+     "clock": "11:04",
+     "minutes": "22",
+     "offset": 8633.7
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "date": "2026-10-26",
+ "house": "衆議院",
+ "meetings": [
+  {
+   "deli_id": "56474",
+   "name": "政治改革特別委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1026-1500-17/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "井上英孝",
+     "group": "政治改革特別委員長",
+     "clock": "15:00",
+     "minutes": "01",
+     "offset": 1199.3
+    },
+    {
+     "name": "藤井比早之",
+     "group": "総務大臣 内閣府特命担当大臣（地方創生） 地域未来戦略担当 副首都整備等推進担当",
+     "clock": "15:00",
+     "minutes": "01",
+     "offset": 1202.5
+    },
+    {
+     "name": "鈴木英敬",
+     "group": "総務副大臣兼内閣府副大臣",
+     "clock": "15:00",
+     "minutes": "01",
+     "offset": 1240.4
+    },
+    {
+     "name": "福原淳嗣",
+     "group": "総務大臣政務官兼内閣府大臣政務官",
+     "clock": "15:01",
+     "minutes": "01",
+     "offset": 1265.1
+    },
+    {
+     "name": "長谷川淳二",
+     "group": "自由民主党・無所属の会",
+     "clock": "15:02",
+     "minutes": "13",
+     "offset": 1350.3
+    },
+    {
+     "name": "落合貴之",
+     "group": "中道",
+     "clock": "15:15",
+     "minutes": "07",
+     "offset": 2132.9
+    },
+    {
+     "name": "福重隆浩",
+     "group": "中道",
+     "clock": "15:22",
+     "minutes": "19",
+     "offset": 2562.1
+    },
+    {
+     "name": "金村龍那",
+     "group": "日本維新の会",
+     "clock": "15:41",
+     "minutes": "12",
+     "offset": 3654.2
+    },
+    {
+     "name": "森ようすけ",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "15:53",
+     "minutes": "26",
+     "offset": 4417.0
+    },
+    {
+     "name": "石川勝",
+     "group": "参政党",
+     "clock": "16:19",
+     "minutes": "15",
+     "offset": 5971.0
+    },
+    {
+     "name": "峰島侑也",
+     "group": "チームみらい",
+     "clock": "16:34",
+     "minutes": "15",
+     "offset": 6851.7
+    },
+    {
+     "name": "塩川鉄也",
+     "group": "日本共産党",
+     "clock": "16:49",
+     "minutes": "15",
+     "offset": 7742.5
+    },
+    {
+     "name": "藤井比早之",
+     "group": "総務大臣 内閣府特命担当大臣（地方創生） 地域未来戦略担当 副首都整備等推進担当",
+     "clock": "17:04",
+     "minutes": "03",
+     "offset": 8667.1
+    }
+   ]
+  }
+ ]
+}

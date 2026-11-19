@@ -1,0 +1,244 @@
+{
+ "date": "2026-10-22",
+ "house": "衆議院",
+ "meetings": [
+  {
+   "deli_id": "56463",
+   "name": "総務委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1022-1000-17/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "田所嘉徳",
+     "group": "総務委員長",
+     "clock": "10:00",
+     "minutes": "04",
+     "offset": 1194.4
+    },
+    {
+     "name": "藤井比早之",
+     "group": "総務大臣 内閣府特命担当大臣（地方創生） 地域未来戦略担当 副首都整備等推進担当",
+     "clock": "10:04",
+     "minutes": "19",
+     "offset": 1412.6
+    },
+    {
+     "name": "鈴木英敬",
+     "group": "総務副大臣兼内閣府副大臣",
+     "clock": "10:23",
+     "minutes": "01",
+     "offset": 2567.1
+    },
+    {
+     "name": "斎藤アレックス",
+     "group": "総務副大臣",
+     "clock": "10:23",
+     "minutes": "01",
+     "offset": 2588.8
+    },
+    {
+     "name": "小池正昭",
+     "group": "総務大臣政務官",
+     "clock": "10:23",
+     "minutes": "01",
+     "offset": 2613.4
+    },
+    {
+     "name": "福原淳嗣",
+     "group": "総務大臣政務官兼内閣府大臣政務官",
+     "clock": "10:24",
+     "minutes": "01",
+     "offset": 2633.5
+    },
+    {
+     "name": "島田智明",
+     "group": "総務大臣政務官",
+     "clock": "10:24",
+     "minutes": "02",
+     "offset": 2653.6
+    }
+   ]
+  },
+  {
+   "deli_id": "56462",
+   "name": "安全保障委員会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1022-0910-13/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "辻清人",
+     "group": "安全保障委員長",
+     "clock": "9:10",
+     "minutes": "02",
+     "offset": 1200.2
+    },
+    {
+     "name": "小泉進次郎",
+     "group": "防衛大臣",
+     "clock": "9:12",
+     "minutes": "12",
+     "offset": 1347.2
+    },
+    {
+     "name": "茂木敏充",
+     "group": "外務大臣",
+     "clock": "9:24",
+     "minutes": "11",
+     "offset": 2021.1
+    },
+    {
+     "name": "小田原潔",
+     "group": "防衛副大臣",
+     "clock": "9:35",
+     "minutes": "01",
+     "offset": 2720.7
+    },
+    {
+     "name": "こやり隆史",
+     "group": "防衛副大臣兼内閣府副大臣",
+     "clock": "9:35",
+     "minutes": "01",
+     "offset": 2738.4
+    },
+    {
+     "name": "堀井巌",
+     "group": "外務副大臣",
+     "clock": "9:36",
+     "minutes": "01",
+     "offset": 2754.3
+    },
+    {
+     "name": "中曽根康隆",
+     "group": "外務副大臣",
+     "clock": "9:36",
+     "minutes": "01",
+     "offset": 2774.0
+    },
+    {
+     "name": "上杉謙太郎",
+     "group": "防衛大臣政務官兼内閣府大臣政務官",
+     "clock": "9:36",
+     "minutes": "01",
+     "offset": 2791.4
+    },
+    {
+     "name": "吉井章",
+     "group": "防衛大臣政務官",
+     "clock": "9:37",
+     "minutes": "01",
+     "offset": 2809.9
+    },
+    {
+     "name": "生稲晃子",
+     "group": "外務大臣政務官",
+     "clock": "9:37",
+     "minutes": "01",
+     "offset": 2829.0
+    },
+    {
+     "name": "藤井一博",
+     "group": "外務大臣政務官",
+     "clock": "9:37",
+     "minutes": "01",
+     "offset": 2850.8
+    },
+    {
+     "name": "大空幸星",
+     "group": "外務大臣政務官",
+     "clock": "9:38",
+     "minutes": "01",
+     "offset": 2871.1
+    }
+   ]
+  },
+  {
+   "deli_id": "56464",
+   "name": "憲法審査会",
+   "url": "https://hlsvod.shugiintv.go.jp/vod/_definst_/amlst:2026/2026-1022-1000-18/playlist.m3u8",
+   "speakers": [
+    {
+     "name": "古屋圭司",
+     "group": "憲法審査会会長",
+     "clock": "10:00",
+     "minutes": "27",
+     "offset": 1197.6
+    },
+    {
+     "name": "新藤義孝",
+     "group": "自由民主党・無所属の会",
+     "clock": "10:27",
+     "minutes": "08",
+     "offset": 2797.9
+    },
+    {
+     "name": "國重徹",
+     "group": "中道",
+     "clock": "10:35",
+     "minutes": "07",
+     "offset": 3271.4
+    },
+    {
+     "name": "馬場伸幸",
+     "group": "日本維新の会",
+     "clock": "10:42",
+     "minutes": "07",
+     "offset": 3708.7
+    },
+    {
+     "name": "飯泉嘉門",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "10:49",
+     "minutes": "07",
+     "offset": 4123.1
+    },
+    {
+     "name": "古川あおい",
+     "group": "チームみらい",
+     "clock": "10:56",
+     "minutes": "07",
+     "offset": 4570.8
+    },
+    {
+     "name": "古屋圭司",
+     "group": "憲法審査会会長",
+     "clock": "11:03",
+     "minutes": "02",
+     "offset": 4992.5
+    },
+    {
+     "name": "鬼木誠",
+     "group": "自由民主党・無所属の会",
+     "clock": "11:05",
+     "minutes": "05",
+     "offset": 5044.0
+    },
+    {
+     "name": "西村智奈美",
+     "group": "中道",
+     "clock": "11:10",
+     "minutes": "05",
+     "offset": 5378.3
+    },
+    {
+     "name": "玉木雄一郎",
+     "group": "国民民主党・無所属クラブ",
+     "clock": "11:15",
+     "minutes": "05",
+     "offset": 5675.4
+    },
+    {
+     "name": "和田政宗",
+     "group": "参政党",
+     "clock": "11:20",
+     "minutes": "05",
+     "offset": 6011.9
+    },
+    {
+     "name": "畑野君枝",
+     "group": "日本共産党",
+     "clock": "11:25",
+     "minutes": "06",
+     "offset": 6336.1
+    }
+   ]
+  }
+ ]
+}
